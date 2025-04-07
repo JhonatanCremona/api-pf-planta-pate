@@ -5,7 +5,18 @@ from starlette.middleware.cors import CORSMiddleware
 
 from config.opc import OPCUAClient
 from config.ws import ws_manager
+from config import db
+
 from services.opcService import ObtenerNodosOpc
+
+from models.ciclo import Ciclo
+from models.sensoresIO import SensoresIO
+from models.sensoresAA import SensoresAA
+from models.sensores import Sensores
+from models.equipo import Equipo
+from models.receta import Receta
+
+from routers import equiposDatos
 
 import logging
 import asyncio
@@ -19,20 +30,34 @@ opc_port = os.getenv("OPC_SERVER_PORT")
 
 logger = logging.getLogger("uvicorn")
 
+# ESTO ESTA HECHO PARA BORRAR EL ARCHIVO historial_cocinas.json
+archivo_historial = "historial_cocinas.json"
+if os.path.exists(archivo_historial):
+    os.remove(archivo_historial)
+    logger.info(f"Archivo {archivo_historial} eliminado al iniciar la aplicación.")
+
 URL = f"opc.tcp://{opc_ip}:{opc_port}"
 opc_client = OPCUAClient(URL)
 
+db.Base.metadata.drop_all(bind=db.engine)
+db.Base.metadata.create_all(bind=db.engine)
 
+dGeneral = ObtenerNodosOpc(opc_client)
 
 async def central_opc_render():
-    listaDatosOpc = ObtenerNodosOpc(opc_client)
     while True:
         try:
             data = {
-                "configuraciones": listaDatosOpc.leer_lista_recetario(10),
+                "cocinas": dGeneral.buscarCocinas(),
+                "enfriadores": dGeneral.buscarEnfriadores(),
+                "home": dGeneral.datosEquiposHome(),
+                "graficoscocinas": dGeneral.graficoCocinas(),
             }
 
-            await ws_manager.send_message("", data["configuraciones"])
+            await ws_manager.send_message("datos-cocinas", data["cocinas"])
+            await ws_manager.send_message("datos-enfriadores", data["enfriadores"])
+            await ws_manager.send_message("datos-home", data["home"])
+            await ws_manager.send_message("graficos-cocinas", data["graficoscocinas"])
 
             await asyncio.sleep(10.0)
         except Exception as e:
@@ -63,7 +88,7 @@ async def resumen_desmoldeo(websocket: WebSocket, id: str):
     await ws_manager.connect(id, websocket)
     try:
         while True:
-            await websocket.receive_json()  # Aquí puedes hacer validaciones si e
+            await websocket.receive_json()
             await ws_manager.send_message(id, "data")
             await asyncio.sleep(0.2)
     except WebSocketDisconnect:
