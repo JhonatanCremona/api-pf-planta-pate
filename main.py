@@ -48,16 +48,18 @@ async def central_opc_render():
     while True:
         try:
             data = {
-                "cocinas": dGeneral.buscarCocinas(),
-                "enfriadores": dGeneral.buscarEnfriadores(),
-                "home": dGeneral.datosEquiposHome(),
+                #"cocinas": dGeneral.buscarCocinas(),
+                #"enfriadores": dGeneral.buscarEnfriadores(),
+                #"datos": dGeneral.respuestaDatos(),
                 "graficoscocinas": dGeneral.graficoCocinas(),
+                "datosGenerales": dGeneral.datosGenerales(),
             }
 
-            await ws_manager.send_message("datos-cocinas", data["cocinas"])
-            await ws_manager.send_message("datos-enfriadores", data["enfriadores"])
-            await ws_manager.send_message("datos-home", data["home"])
+            #await ws_manager.send_message("datos-cocinas", data["cocinas"])
+            #await ws_manager.send_message("datos-enfriadores", data["enfriadores"])
+            #await ws_manager.send_message("datos", data["datos"])
             await ws_manager.send_message("graficos-cocinas", data["graficoscocinas"])
+            await ws_manager.send_message("datos-generales", data["datosGenerales"])
 
             await asyncio.sleep(10.0)
         except Exception as e:

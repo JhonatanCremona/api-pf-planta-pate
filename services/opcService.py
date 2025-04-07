@@ -9,192 +9,142 @@ class ObtenerNodosOpc:
     def __init__(self, conexion_servidor):
         self.conexion_servidor = conexion_servidor    
 
-    def buscarCocinas(self):
-        listaCocinas = []
+    def datosGenerales(self):
+        resultado = {
+            "datos-cocinas": [],
+            "datos-enfriadores": [],
+        }
+
+        # Cargar datos de los JSON guardados
+        archivos_json = {
+            "2:COCINA-1-L1": "cocina1.json",
+            "2:COCINA-2-L1": "cocina2.json",
+            "2:COCINA-3-L1": "cocina3.json",
+            "2:COCINA-4-L2": "cocina4.json",
+            "2:COCINA-5-L2": "cocina5.json",
+            "2:COCINA-6-L2": "cocina6.json",
+            "2:ENFRIADOR-1-L1": "enfriador1.json",
+            "2:ENFRIADOR-2-L1": "enfriador2.json",
+            "2:ENFRIADOR-3-L1": "enfriador3.json",
+            "2:ENFRIADOR-4-L1": "enfriador4.json",
+            "2:ENFRIADOR-5-L2": "enfriador5.json",
+            "2:ENFRIADOR-6-L2": "enfriador6.json",
+            "2:ENFRIADOR-7-L2": "enfriador7.json",
+            "2:ENFRIADOR-8-L2": "enfriador8.json"
+        }
+
+        datos_json = {}
+        for equipo, archivo in archivos_json.items():
+            try:
+                if os.path.exists(archivo) and os.path.getsize(archivo) > 0:
+                    with open(archivo, "r") as file:
+                        datos_json[equipo] = json.load(file)
+                else:
+                    datos_json[equipo] = []
+            except Exception as e:
+                logger.error(f"Error cargando archivo {archivo}: {e}")
+                datos_json[equipo] = []
 
         try:
             root_node = self.conexion_servidor.get_root_node().get_child(["0:Objects"]).get_child(["2:ServerInterfaces"])
 
             interfaces = {
-                "2:Server interface_1": ["2:COCINA-1-L1", "2:COCINA-2-L1", "2:COCINA-3-L1"],
-                "2:Server interface_2": ["2:COCINA-4-L2", "2:COCINA-5-L2", "2:COCINA-6-L2"]
+                "2:Server interface_1": [
+                    "2:COCINA-1-L1", "2:COCINA-2-L1", "2:COCINA-3-L1",
+                    "2:ENFRIADOR-1-L1", "2:ENFRIADOR-2-L1", "2:ENFRIADOR-3-L1", "2:ENFRIADOR-4-L1"
+                ],
+                "2:Server interface_2": [
+                    "2:COCINA-4-L2", "2:COCINA-5-L2", "2:COCINA-6-L2",
+                    "2:ENFRIADOR-5-L2", "2:ENFRIADOR-6-L2", "2:ENFRIADOR-7-L2", "2:ENFRIADOR-8-L2"
+                ]
             }
 
-            for interface, cocinas in interfaces.items():
+            cocina_id = 1
+            enfriador_id = 7
+
+            for interface, equipos in interfaces.items():
+
                 try:
                     interface_node = root_node.get_child([interface])
-                    for cocina in cocinas:
+                    for equipo in equipos:
                         try:
-                            cocina_node = interface_node.get_child([cocina])
-                            children = cocina_node.get_children()
+                            equipo_node = interface_node.get_child([equipo])
+                            children = equipo_node.get_children()
                             valores = [child.get_value() for child in children]
 
-                            # Construcción de la estructura de salida
-                            cocina_data = {
-                                "num_cocina": valores[0],
-                                "num_receta": valores[1],
-                                "nom_receta": valores[2],
-                                "estado": valores[3],
-                                "cant_torres": valores[4],
-                                "tipo_Fin": valores[5],
-                                "pasos": [
-                                    {
-                                        "paso_actual": valores[6],
-                                        "tiempo": valores[7],
-                                        "temp_Agua": valores[8],
-                                        "temp_Prod": valores[9],
-                                        "temp_Ing": valores[10],
-                                        "niv_Agua": valores[11]
-                                    }
-                                ],
-                                "sector_io": [
-                                    {
+                            if "COCINA" in equipo:
+                                equipo_general = {
+                                    "tipo": "COCINA",
+                                    "id": cocina_id,
+                                    "estado": valores[3],
+                                    "temp_Agua": valores[7],
+                                    "temp_Prod": valores[8],
+                                    "niv_Agua": valores[11],
+                                    "receta": valores[2],
+                                    "tiempoTranscurrido": valores[6]
+                                }
+                                equipo_detalle = {
+                                    "num_cocina": valores[0],
+                                    "num_receta": valores[1],
+                                    "nom_receta": valores[2],
+                                    "estado": valores[3],
+                                    "cant_torres": valores[4],
+                                    "tipo_Fin": valores[5],
+                                    "sector_io": [{
                                         "filtro_succion_agua": valores[12],
                                         "entrada_agua": valores[13],
                                         "bomba_recirculacion": valores[14],
                                         "vapor_serpentina": valores[15],
                                         "vapor_vivo": valores[16]
-                                    }
-                                ]
-                            }
-                            listaCocinas.append(cocina_data)
-                        except Exception as e:
-                            logger.error(f"Error al obtener datos de {cocina}: {e}")
-                except Exception as e:
-                    logger.error(f"Error al acceder a {interface}: {e}")
-
-            #print(listaCocinas)
-
-        except Exception as e:
-            logger.error(f"Error al buscar nodos: {e}")
-
-        return listaCocinas
-
-    def buscarEnfriadores(self):
-        listaEnfriadores = []
-
-        try:
-            root_node = self.conexion_servidor.get_root_node().get_child(["0:Objects"]).get_child(["2:ServerInterfaces"])
-
-            interfaces = {
-                "2:Server interface_1": ["2:ENFRIADOR-1-L1", "2:ENFRIADOR-2-L1", "2:ENFRIADOR-3-L1", "2:ENFRIADOR-4-L1"],
-                "2:Server interface_2": ["2:ENFRIADOR-5-L2", "2:ENFRIADOR-6-L2", "2:ENFRIADOR-7-L2", "2:ENFRIADOR-8-L2"]
-            }
-
-            for interface, enfriadores in interfaces.items():
-                try:
-                    interface_node = root_node.get_child([interface])
-                    for enfriador in enfriadores:
-                        try:
-                            enfriador_node = interface_node.get_child([enfriador])
-                            children = enfriador_node.get_children()
-                            valores = [child.get_value() for child in children]
-
-                            # Construcción de la estructura de salida
-                            enfriador_data = {
-                                "num_enfriador": valores[0],
-                                "num_receta": valores[1],
-                                "nom_receta": valores[2],
-                                "estado": valores[3],
-                                "cant_torres": valores[4],
-                                "tipo_Fin": valores[5],
-                                "pasos": [
-                                    {
-                                        "paso_actual": valores[6],
-                                        "tiempo": valores[7],
-                                        "temp_Agua": valores[8],
-                                        "temp_Prod": valores[9],
-                                        "temp_Ing": valores[10],
-                                        "niv_Agua": valores[11]
-                                    }
-                                ],
-                                "sector_io": [
-                                    {
-                                        "filtro_succion_agua": valores[12],
-                                        "entrada_agua": valores[13],
-                                        "bomba_recirculacion": valores[14],
-                                        "valvula_amoniaco": valores[15],
-                                    }
-                                ]
-                            }
-                            listaEnfriadores.append(enfriador_data)
-                        except Exception as e:
-                            logger.error(f"Error al obtener datos de {enfriador}: {e}")
-                except Exception as e:
-                    logger.error(f"Error al acceder a {interface}: {e}")
-
-            #print(listaEnfriadores)
-
-        except Exception as e:
-            logger.error(f"Error al buscar nodos: {e}")
-
-        return listaEnfriadores
-
-    def datosEquiposHome(self):
-        listaCocinas = []
-
-        try:
-            root_node = self.conexion_servidor.get_root_node().get_child(["0:Objects"]).get_child(["2:ServerInterfaces"])
-
-            interfaces = {
-                "2:Server interface_1": ["2:COCINA-1-L1", "2:COCINA-2-L1", "2:COCINA-3-L1", "2:ENFRIADOR-1-L1", "2:ENFRIADOR-2-L1", "2:ENFRIADOR-3-L1", "2:ENFRIADOR-4-L1"],
-                "2:Server interface_2": ["2:COCINA-4-L2", "2:COCINA-5-L2", "2:COCINA-6-L2", "2:ENFRIADOR-5-L2", "2:ENFRIADOR-6-L2", "2:ENFRIADOR-7-L2", "2:ENFRIADOR-8-L2"]
-            }
-
-            for index, (interface, cocinas) in enumerate(interfaces.items(), 1):
-                cocina_info = {"id": index, "equipos": []}
-
-                try:
-                    interface_node = root_node.get_child([interface])
-                    for cocina in cocinas:
-                        try:
-                            cocina_node = interface_node.get_child([cocina])
-                            children = cocina_node.get_children()
-                            valores = [child.get_value() for child in children]
-
-                            if "COCINA" in cocina:
-                                equipo_data = {
-                                    "tipo": "COCINA",
-                                    "id": valores[0],
-                                    "estado": valores[3],
-                                    "tempAguaActual": valores[7],
-                                    "tempProductoActual": valores[8],
-                                    "receta": valores[2],
-                                    "tiempoTranscurrido": valores[6]
+                                    }],
+                                    "historial": datos_json.get(equipo, [])
                                 }
-                            elif "ENFRIADOR" in cocina:
-                                equipo_data = {
+                                resultado["datos-cocinas"].append([equipo_general, equipo_detalle])
+                                cocina_id += 1
+
+                            elif "ENFRIADOR" in equipo:
+                                equipo_general = {
                                     "tipo": "ENFRIADOR",
-                                    "id": valores[0],
+                                    "id": enfriador_id,
                                     "estado": valores[3],
-                                    "tempAguaActual": valores[8],
-                                    "tempProductoActual": valores[9],
+                                    "temp_Agua": valores[8],
+                                    "temp_Prod": valores[9],
+                                    "niv_Agua": valores[11],
                                     "receta": valores[2],
                                     "tiempoTranscurrido": valores[7]
                                 }
-
-                            cocina_info["equipos"].append(equipo_data)
+                                equipo_detalle = {
+                                    "num_enfriador": valores[0],
+                                    "num_receta": valores[1],
+                                    "nom_receta": valores[2],
+                                    "estado": valores[3],
+                                    "cant_torres": valores[4],
+                                    "tipo_Fin": valores[5],
+                                    "sector_io": [{
+                                        "filtro_succion_agua": valores[12],
+                                        "entrada_agua": valores[13],
+                                        "bomba_recirculacion": valores[14],
+                                        "valvula_amoniaco": valores[15]
+                                    }],
+                                    "historial": datos_json.get(equipo, [])
+                                }
+                                resultado["datos-enfriadores"].append([equipo_general, equipo_detalle])
+                                enfriador_id += 1
 
                         except Exception as e:
-                            logger.error(f"Error al obtener datos de {cocina}: {e}")
+                            logger.error(f"Error al obtener datos de {equipo}: {e}")
 
                 except Exception as e:
                     logger.error(f"Error al acceder a {interface}: {e}")
 
-                listaCocinas.append(cocina_info)
-
-            resultado = {"lineas": listaCocinas}
-
-            #print(resultado)
-
         except Exception as e:
             logger.error(f"Error al buscar nodos: {e}")
 
-        return resultado 
+        return resultado
 
     def graficoCocinas(self):
         if not hasattr(self, "verificacion_inicial_realizada"):
-            self.verificacion_inicial_realizada = False  # Inicialmente, no se ha hecho la verificación
+            self.verificacion_inicial_realizada = False
 
         archivos_cocinas = {
             "2:COCINA-1-L1": "cocina1.json",
@@ -215,7 +165,6 @@ class ObtenerNodosOpc:
 
         cocinas_data = {}
 
-        # Cargar datos previos si existen
         for cocina, archivo in archivos_cocinas.items():
             if os.path.exists(archivo) and os.path.getsize(archivo) > 0:
                 with open(archivo, "r") as file:
@@ -249,7 +198,6 @@ class ObtenerNodosOpc:
                     for cocina in cocinas:
                         try:
                             cocina_node = interface_node.get_child([cocina])
-
                             children = cocina_node.get_children()
                             valores = [child.get_value() for child in children]
 
@@ -260,13 +208,12 @@ class ObtenerNodosOpc:
                             estado = valores[3]
 
                             if estado == "FINALIZADO":
-                                if cocinas_data[cocina]:  # Solo si hay datos, modificarlos antes de guardar
+                                if cocinas_data[cocina]:
                                     cocinas_data[cocina][-1]["estado"] = "CICLO_COMPLETO"
                                     self.guardarEnBaseDeDatos(cocina, cocinas_data[cocina])
-                                cocinas_data[cocina] = []  # Vaciar lista solo después de guardar
+                                cocinas_data[cocina] = []
 
-                            elif estado == "COCINANDO" or estado == "ENFRIANDO":
-                                # Obtener el último ID correctamente
+                            elif estado in ["COCINANDO", "ENFRIANDO"]:
                                 ultimo_id = max([paso["id"] for paso in cocinas_data[cocina]], default=0)
                                 cocina_id = ultimo_id + 1
 
@@ -293,8 +240,6 @@ class ObtenerNodosOpc:
 
         except Exception as e:
             logging.error(f"Error al buscar nodos en graficoCocinas: {e}")
-
-        return cocinas_data
 
     def guardarEnBaseDeDatos(self, cocina, datos):
         print(f"💾 Guardando en base de datos: {cocina} -> {datos}")
