@@ -7,3 +7,5 @@ class Equipo(Base):
     
     id = Column(Integer, primary_key=True, index=True)
     nombre = Column(String(50), index=True, nullable=False)
+
+    ciclo = relationship("Ciclo", back_populates="equipo")

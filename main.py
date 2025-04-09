@@ -16,8 +16,9 @@ from models.sensoresAA import SensoresAA
 from models.sensores import Sensores
 from models.equipo import Equipo
 from models.receta import Receta
+from models.estadoCiclo import EstadoCiclo
 
-from routers import equiposDatos, historicoGraficos
+from routers import equiposDatos, historicoGraficos, graficosHistorico
 
 import logging
 import asyncio
@@ -48,6 +49,7 @@ dGeneral = ObtenerNodosOpc(opc_client)
 
 ruta_sql_sensores = os.path.join(ruta_principal, 'query', 'insert_sensores.sql')
 ruta_sql_recetas = os.path.join(ruta_principal, 'query', 'insert_recetas.sql')
+ruta_sql_equipos = os.path.join(ruta_principal, 'query', 'insert_equipos.sql')
 
 def cargar_archivo_sql(file_path: str):
     try:
@@ -71,17 +73,17 @@ async def central_opc_render():
                 #"cocinas": dGeneral.buscarCocinas(),
                 #"enfriadores": dGeneral.buscarEnfriadores(),
                 #"datos": dGeneral.respuestaDatos(),
-                "graficoscocinas": dGeneral.graficoCocinas(),
-                "datosGenerales": dGeneral.datosGenerales(),
-                "actualizarRecetas": await  dGeneral.actualizarRecetas(),
+                #"graficoscocinas": dGeneral.graficoCocinas(),
+                #"datosGenerales": dGeneral.datosGenerales(),
+                #"actualizarRecetas": await  dGeneral.actualizarRecetas(),
             }
 
             #await ws_manager.send_message("datos-cocinas", data["cocinas"])
             #await ws_manager.send_message("datos-enfriadores", data["enfriadores"])
             #await ws_manager.send_message("datos", data["datos"])
-            await ws_manager.send_message("graficos-cocinas", data["graficoscocinas"])
-            await ws_manager.send_message("datos-generales", data["datosGenerales"])
-            await ws_manager.send_message("datos-recetas", data["actualizarRecetas"])
+            #await ws_manager.send_message("graficos-cocinas", data["graficoscocinas"])
+            #await ws_manager.send_message("datos-generales", data["datosGenerales"])
+            #await ws_manager.send_message("datos-recetas", data["actualizarRecetas"])
 
             await asyncio.sleep(10.0)
         except Exception as e:
@@ -99,6 +101,9 @@ async def lifespan(app: FastAPI):
             logger.info(f"Cargar registros BDD [Sensores]")
             cargar_archivo_sql(ruta_sql_sensores)
             cargar_archivo_sql(ruta_sql_recetas)
+        if session.query(Equipo).count() == 0:
+            logger.info(f"Carga registro BDD [Equipos Dicc]")
+            cargar_archivo_sql(ruta_sql_equipos)
         yield
     finally:
         opc_client.disconnect()
@@ -113,7 +118,7 @@ app.add_middleware(
 )
 
 app.include_router(historicoGraficos.RoutersGraficosH)
-
+#app.include_router(graficosHistorico.RoutersGraficosH)
 
 @app.websocket("/ws/{id}")
 async def resumen_desmoldeo(websocket: WebSocket, id: str):
@@ -127,7 +132,7 @@ async def resumen_desmoldeo(websocket: WebSocket, id: str):
     except WebSocketDisconnect:
         await ws_manager.disconnect(id, websocket)
 
-app.include_router(graficosHistorico.RoutersGraficosH)
+
 
 @app.get("/")
 def read_root():

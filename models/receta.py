@@ -9,3 +9,5 @@ class Receta(Base):
     nombre = Column(String(50), index=True, nullable=False)
     nroPaso = Column(Integer, index=True, nullable=False)
     tipoFin = Column(String(50), index=True, nullable=False)
+
+    ciclo = relationship("Ciclo", back_populates="receta")

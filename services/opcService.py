@@ -133,7 +133,7 @@ class ObtenerNodosOpc:
                                     "num_receta": valores[1],
                                     "nom_receta": valores[2],
                                     "cant_torres": valores[4],
-                                    "tipo_Fin": valores[5],
+                                    "tipo_fin": valores[5],
                                     "sector_io": [{
                                         "filtro_succion_agua": valores[13],
                                         "entrada_agua": valores[14],
@@ -169,7 +169,7 @@ class ObtenerNodosOpc:
                                     "num_receta": valores[1],
                                     "nom_receta": valores[2],
                                     "cant_torres": valores[4],
-                                    "tipo_Fin": valores[5],
+                                    "tipo_fin": valores[5],
                                     "sector_io": [{
                                         "filtro_succion_agua": valores[13],
                                         "entrada_agua": valores[14],
