@@ -16,7 +16,7 @@ from models.sensores import Sensores
 from models.equipo import Equipo
 from models.receta import Receta
 
-from routers import equiposDatos
+from routers import equiposDatos, historicoGraficos
 
 import logging
 import asyncio
@@ -83,6 +83,9 @@ app.add_middleware(
     allow_methods=["*"],  # Permite todos los métodos (GET, POST, etc.)
     allow_headers=["*"],  # Permite todos los headers
 )
+
+app.include_router(historicoGraficos.RoutersGraficosH)
+
 
 @app.websocket("/ws/{id}")
 async def resumen_desmoldeo(websocket: WebSocket, id: str):
