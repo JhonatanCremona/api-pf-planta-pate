@@ -4,6 +4,7 @@ from datetime import datetime, date
 
 from models.ciclo import Ciclo
 from models.equipo import Equipo
+from models.sensores import Sensores
 
 from config import db
 
@@ -23,6 +24,7 @@ def obtener_lista_ciclos(
     equipo_actual = (
         db.query(Equipo)
         .filter(Equipo.nombre == equipo)
+        .first()
     )
     if not equipo_actual:
         return {"error": "Equipo no encontrado"}
@@ -32,6 +34,7 @@ def obtener_lista_ciclos(
         .filter(
             Ciclo.idEquipo == equipo_actual.id,
             Ciclo.fechaFin.between(fecha_inicio, fecha_fin))
+        .all()
         )
 
     if not fecha_inicio:
@@ -58,9 +61,16 @@ def obtener_lista_ciclos(
 def obtener_datos_sensores(
     equipo: str, 
     id_ciclo: int, 
-    fecha_inicio: date = Query(..., description="Fecha de inicio (YYYY-MM-DD HH:MM:SS)"),
-    fecha_fin: date = Query(..., description="Fecha de fin (YYYY-MM-DD)"),
     db : Session = Depends(db.get_db)
 ):
+    ciclo = (
+        db.query(Ciclo)
+        .filter(Ciclo.id == id_ciclo)
+        .first()
+        )
+    diccionario_sensores = (
+        db.query(Sensores)
+        .all()
+    )
     
     return ""
