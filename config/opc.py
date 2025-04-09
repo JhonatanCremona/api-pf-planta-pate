@@ -55,3 +55,8 @@ class OPCUAClient:
         if not self.is_connected():
             raise Exception("Cliente OPC no conectado.")
         return self.client.get_root_node()
+
+    async def get_objects_nodos(self):
+        if not self.client:
+            raise Exception("⚠️ Cliente OPC UA no conectado.")
+        return self.client.get_root_node()

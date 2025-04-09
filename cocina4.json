@@ -3,2429 +3,616 @@
         "id": 1,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 2,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 3,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 4,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 5,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 6,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 7,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 8,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 9,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 10,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 11,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 12,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 13,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 14,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 15,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 16,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 17,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 18,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 19,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 20,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 21,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 22,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 23,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 24,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 25,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 26,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 27,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 28,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 29,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 30,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 31,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 32,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 33,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 34,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 35,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 36,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 37,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 38,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 39,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 40,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 41,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 42,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 43,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 44,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 45,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 46,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 47,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 48,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 49,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 50,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 51,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 52,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 53,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 54,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 55,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 56,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 57,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 58,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 59,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 60,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 61,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 62,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 63,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 64,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 65,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 66,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 67,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 68,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 69,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 70,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 71,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 72,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 73,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 74,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 75,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 76,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 77,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 78,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 79,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 80,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 81,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 82,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 83,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 84,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 85,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 86,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 87,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     },
     {
         "id": 88,
         "tiempo": 1,
         "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 89,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 90,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 91,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 92,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 93,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 94,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 95,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 96,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 97,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 98,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 99,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 100,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 101,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 102,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 103,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 104,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 105,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 106,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 107,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 108,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 109,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 110,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 111,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 112,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 113,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 114,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 115,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 116,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 117,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 118,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 119,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 120,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 121,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 122,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 123,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 124,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 125,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 126,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 127,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 128,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 129,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 130,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 131,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 132,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 133,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 134,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 135,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 136,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 137,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 138,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 139,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 140,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 141,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 142,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 143,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 144,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 145,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 146,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 147,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 148,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 149,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 150,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 151,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 152,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 153,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 154,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 155,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 156,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 157,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 158,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 159,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 160,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 161,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 162,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 163,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 164,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 165,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 166,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 167,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 168,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 169,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 170,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 171,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 172,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 173,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 174,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 175,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 176,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 177,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 178,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 179,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 180,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 181,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 182,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 183,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 184,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 185,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 186,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 187,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 188,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 189,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 190,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 191,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 192,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 193,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 194,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 195,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 196,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 197,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 198,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 199,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 200,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 201,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 202,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 203,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 204,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 205,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 206,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 207,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 208,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 209,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 210,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 211,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 212,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 213,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 214,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 215,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 216,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 217,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 218,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 219,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 220,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 221,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 222,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 223,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 224,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 225,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 226,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 227,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 228,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 229,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 230,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 231,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 232,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 233,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 234,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 235,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 236,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 237,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 238,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 239,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 240,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 241,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 242,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 243,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 244,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 245,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 246,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 247,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 248,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 249,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 250,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 251,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 252,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 253,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 254,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 255,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 256,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 257,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 258,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 259,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 260,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 261,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 262,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 263,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 264,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 265,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 266,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 267,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 268,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 269,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 270,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 271,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 272,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 273,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 274,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 275,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 276,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 277,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 278,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 279,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 280,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 281,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 282,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 283,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 284,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 285,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 286,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 287,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 288,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 289,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 290,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 291,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 292,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 293,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 294,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 295,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 296,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 297,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 298,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 299,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 300,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 301,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 302,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 303,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 304,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 305,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 306,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 307,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 308,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 309,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 310,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 311,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 312,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 313,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 314,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 315,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 316,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 317,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 318,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 319,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 320,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 321,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 322,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 323,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 324,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 325,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 326,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 327,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 328,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 329,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 330,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 331,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 332,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 333,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 334,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 335,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 336,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 337,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 338,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 339,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 340,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 341,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 342,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 343,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 344,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 345,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 346,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
-        "estado": "COCINANDO"
-    },
-    {
-        "id": 347,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Prod": 1,
+        "temp_Ingreso": 1,
         "estado": "COCINANDO"
     }
 ]
