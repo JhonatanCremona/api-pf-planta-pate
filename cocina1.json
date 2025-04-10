@@ -1,1 +1,74 @@
-[]
+[
+    {
+        "id": 1,
+        "tiempo": 1,
+        "temp_Agua": 1,
+        "temp_Ingreso": 1,
+        "estado": "PRE-CALENTAMIENTO",
+        "lote": "LOTE-DESCONOCIDO"
+    },
+    {
+        "id": 2,
+        "tiempo": 1,
+        "temp_Agua": 1,
+        "temp_Ingreso": 1,
+        "estado": "PRE-CALENTAMIENTO",
+        "lote": "LOTE-0ECD265E"
+    },
+    {
+        "id": 3,
+        "tiempo": 1,
+        "temp_Agua": 1,
+        "temp_Ingreso": 1,
+        "estado": "PRE-CALENTAMIENTO",
+        "lote": "LOTE-0ECD265E"
+    },
+    {
+        "id": 4,
+        "tiempo": 1,
+        "temp_Agua": 1,
+        "temp_Ingreso": 1,
+        "estado": "PRE-CALENTAMIENTO",
+        "lote": "LOTE-0ECD265E"
+    },
+    {
+        "id": 5,
+        "tiempo": 1,
+        "temp_Agua": 1,
+        "temp_Ingreso": 1,
+        "estado": "PRE-CALENTAMIENTO",
+        "lote": "LOTE-0ECD265E"
+    },
+    {
+        "id": 6,
+        "tiempo": 1,
+        "temp_Agua": 1,
+        "temp_Ingreso": 1,
+        "estado": "PRE-CALENTAMIENTO",
+        "lote": "LOTE-0ECD265E"
+    },
+    {
+        "id": 7,
+        "tiempo": 1,
+        "temp_Agua": 1,
+        "temp_Ingreso": 1,
+        "estado": "PRE-CALENTAMIENTO",
+        "lote": "LOTE-0ECD265E"
+    },
+    {
+        "id": 8,
+        "tiempo": 1,
+        "temp_Agua": 1,
+        "temp_Ingreso": 1,
+        "estado": "PRE-CALENTAMIENTO",
+        "lote": "LOTE-0ECD265E"
+    },
+    {
+        "id": 9,
+        "tiempo": 1,
+        "temp_Agua": 1,
+        "temp_Ingreso": 1,
+        "estado": "PRE-CALENTAMIENTO",
+        "lote": "LOTE-0ECD265E"
+    }
+]

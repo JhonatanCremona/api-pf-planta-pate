@@ -73,17 +73,17 @@ async def central_opc_render():
                 #"cocinas": dGeneral.buscarCocinas(),
                 #"enfriadores": dGeneral.buscarEnfriadores(),
                 #"datos": dGeneral.respuestaDatos(),
-                #"graficoscocinas": dGeneral.graficoCocinas(),
-                #"datosGenerales": dGeneral.datosGenerales(),
-                #"actualizarRecetas": await  dGeneral.actualizarRecetas(),
+                "graficoscocinas": dGeneral.graficoCocinas(),
+                "datosGenerales": dGeneral.datosGenerales(),
+                "actualizarRecetas": await  dGeneral.actualizarRecetas(),
             }
 
             #await ws_manager.send_message("datos-cocinas", data["cocinas"])
             #await ws_manager.send_message("datos-enfriadores", data["enfriadores"])
             #await ws_manager.send_message("datos", data["datos"])
-            #await ws_manager.send_message("graficos-cocinas", data["graficoscocinas"])
-            #await ws_manager.send_message("datos-generales", data["datosGenerales"])
-            #await ws_manager.send_message("datos-recetas", data["actualizarRecetas"])
+            await ws_manager.send_message("graficos-cocinas", data["graficoscocinas"])
+            await ws_manager.send_message("datos-generales", data["datosGenerales"])
+            await ws_manager.send_message("datos-recetas", data["actualizarRecetas"])
 
             await asyncio.sleep(10.0)
         except Exception as e:
