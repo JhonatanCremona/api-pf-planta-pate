@@ -22,5 +22,4 @@ INSERT INTO pf.sensores (id, nombre, tipo) VALUES
 (15, 'Agua toma de filtro', 'SALIDA'), /*COCINA & ENFRIADOR*/
 (16, 'Carga de agua', 'SALIDA'), /*COCINA & ENFRIADOR*/
 
-(17, 'Tapa accionamiento', 'SALIDA')
-; /*COCINA & ENFRIADOR*/
+(17, 'Tapa accionamiento', 'SALIDA'); /*COCINA & ENFRIADOR*/
