@@ -3,6 +3,7 @@ from sqlalchemy import and_
 from datetime import date, datetime
 from models.ciclo import Ciclo
 from models.receta import Receta
+from models.sensoresAA import SensoresAA
 
 from collections import defaultdict
 
@@ -24,34 +25,40 @@ import logging
 
 logger = logging.getLogger("uvicorn")
 
-def datosGraficos(db: Session, fecha_inicio: date, fecha_fin: date) -> List[dict]:
-    fecha_inicio = datetime.combine(fecha_inicio, datetime.min.time())
-    fecha_fin = datetime.combine(fecha_fin, datetime.max.time())
+def datetime_to_string(obj):
+    if isinstance(obj, datetime):
+        return obj.isoformat()
+    raise TypeError(f"Object of type {type(obj)} is not JSON serializable")
 
-    ciclos = (
-        db.query(Ciclo.estado, Ciclo.lote, Ciclo.peso)
-        .filter(Ciclo.fecha_fin.between(fecha_inicio, fecha_fin))
-        .all()
-    )
-
-    resultado = []
-    for estado, lote, peso in ciclos:
-        resultado.append({
-            "estado": estado,
-            "lote": lote,
-            "peso": peso
-        })
-
-    return resultado
+def limpiar_archivo_json(archivo):
+    try:
+        if os.path.exists(archivo):
+            with open(archivo, "w") as file:
+                json.dump([], file)
+            logger.info(f"Archivo {archivo} limpiado correctamente")
+    except Exception as e:
+        logger.error(f"Error al limpiar archivo {archivo}: {e}")
 
 class ObtenerNodosOpc:
     PANTALLA_ENCENDIDA = True
     ULTIMO_ESTADO_PANTALLA = False
 
+    SENSORES_ACTIVOS = {
+        "temp_agua": 1,      # Temperatura agua
+        "temp_ingreso": 2,   # Temperatura ingreso
+        "temp_prod": 3,      # Temperatura producto
+        "temp_chiller": 4,   # Temperatura chiller
+        "niv_agua": 5,       # Nivel agua
+    }
+
     def __init__(self, conexion_servidor):
         self.conexion_servidor = conexion_servidor
-        self.estados_previos = {}
-        self.lotes_actuales = {}   
+        self.estados_anteriores = {}
+        self.session = next(get_db())
+
+    def __del__(self):
+        if hasattr(self, 'session'):
+            self.session.close()
 
     def datosGenerales(self):
         resultado = {
@@ -60,28 +67,33 @@ class ObtenerNodosOpc:
         }
 
         archivos_json = {
-             "2:COCINA-1-L1": "cocina1.json",
-             "2:COCINA-2-L1": "cocina2.json",
-             "2:COCINA-3-L1": "cocina3.json",
-             "2:COCINA-4-L2": "cocina4.json",
-             "2:COCINA-5-L2": "cocina5.json",
-             "2:COCINA-6-L2": "cocina6.json",
-             "2:ENFRIADOR-1-L1": "enfriador1.json",
-             "2:ENFRIADOR-2-L1": "enfriador2.json",
-             "2:ENFRIADOR-3-L1": "enfriador3.json",
-             "2:ENFRIADOR-4-L1": "enfriador4.json",
-             "2:ENFRIADOR-5-L2": "enfriador5.json",
-             "2:ENFRIADOR-6-L2": "enfriador6.json",
-             "2:ENFRIADOR-7-L2": "enfriador7.json",
-             "2:ENFRIADOR-8-L2": "enfriador8.json"
-         }
- 
+            "2:COCINA-1-L1": "cocina1.json",
+            "2:COCINA-2-L1": "cocina2.json",
+            "2:COCINA-3-L1": "cocina3.json",
+            "2:COCINA-4-L2": "cocina4.json",
+            "2:COCINA-5-L2": "cocina5.json",
+            "2:COCINA-6-L2": "cocina6.json",
+            "2:ENFRIADOR-1-L1": "enfriador1.json",
+            "2:ENFRIADOR-2-L1": "enfriador2.json",
+            "2:ENFRIADOR-3-L1": "enfriador3.json",
+            "2:ENFRIADOR-4-L1": "enfriador4.json",
+            "2:ENFRIADOR-5-L2": "enfriador5.json",
+            "2:ENFRIADOR-6-L2": "enfriador6.json",
+            "2:ENFRIADOR-7-L2": "enfriador7.json",
+            "2:ENFRIADOR-8-L2": "enfriador8.json"
+        }
+
         datos_json = {}
         for equipo, archivo in archivos_json.items():
             try:
                 if os.path.exists(archivo) and os.path.getsize(archivo) > 0:
-                    with open(archivo, "r") as file:
-                        datos_json[equipo] = json.load(file)
+                    try:
+                        with open(archivo, "r") as file:
+                            datos_json[equipo] = json.load(file)
+                    except json.JSONDecodeError:
+                        logger.error(f"Error en formato JSON en archivo {archivo}")
+                        limpiar_archivo_json(archivo)
+                        datos_json[equipo] = []
                 else:
                     datos_json[equipo] = []
             except Exception as e:
@@ -108,83 +120,111 @@ class ObtenerNodosOpc:
             for interface, equipos in interfaces.items():
                 try:
                     interface_node = root_node.get_child([interface])
+
+                    estados_validos = {
+                        "COCINA": ["OPERATIVO", "PAUSA", "PRE CALENTAMIENTO"],
+                        "ENFRIADOR": ["PRE ENFRIAMIENTO", "OPERATIVO", "PAUSA"]
+                    }
+                    
+                    estados_anteriores = {}
+
                     for equipo in equipos:
                         try:
                             equipo_node = interface_node.get_child([equipo])
                             children = equipo_node.get_children()
                             valores = [child.get_value() for child in children]
 
-                            estado_actual = valores[3]
-                            id_equipo = valores[0]
-                            id_receta = valores[2]
-                            cantidad_torres = valores[4]
-                            estado_previo = self.estados_previos.get(equipo)
+                            historial_actual = datos_json.get(equipo, [])
+                            nuevo_id = len(historial_actual) + 1
 
+                            tipo = "COCINA" if "COCINA" in equipo else "ENFRIADOR"
+                            estado_actual = valores[3].strip().upper()
+                            estado_anterior = self.estados_anteriores.get(equipo, "")
 
+                            self.estados_anteriores[equipo] = estado_actual
 
+                            estados_continuos = {
+                                "COCINA": ["OPERATIVO", "PRE CALENTAMIENTO", "PAUSA"],
+                                "ENFRIADOR": ["OPERATIVO", "PRE ENFRIAMIENTO", "PAUSA"]
+                            }
 
-                            if not hasattr(self, "lotes_actuales"):
-                                self.lotes_actuales = {}
+                            if estado_actual in estados_continuos[tipo]:
+                                historial_actual = datos_json.get(equipo, [])
+                                nuevo_id = len(historial_actual) + 1
 
-                            if not equipo in datos_json:
-                                datos_json[equipo] = {
-                                    "historial": []
-                                }
+                                id_ciclo = self.obtener_id_ciclo_existente(valores[22], valores[0])
 
-                            if estado_previo != estado_actual:
-                                logger.info(f"🔄 Cambio detectado en {equipo}: {estado_previo} -> {estado_actual}")
-                                self.estados_previos[equipo] = estado_actual
+                                if id_ciclo is not None:
+                                    # Guardar el paso en el historial JSON como lo haces actualmente
+                                    nuevo_paso = {
+                                        "id_historial": nuevo_id,
+                                        "tiempo": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                                        "temp_agua": valores[8],
+                                        "temp_ingreso": valores[9],
+                                        "estado": valores[3],
+                                        "niv_agua": valores[11],
+                                        "idCiclo": id_ciclo,
+                                    }
 
-                            # Obtener lote actual o generar uno nuevo
-                            if equipo not in self.lotes_actuales:
-                                self.lotes_actuales[equipo] = f"LOTE-{os.urandom(4).hex().upper()}"
+                                    historial_actual.append(nuevo_paso)
+                                    datos_json[equipo] = historial_actual
 
-                            lote = self.lotes_actuales[equipo]
+                                    try:
+                                        # Guardar el historial JSON
+                                        with open(archivos_json[equipo], "w") as file:
+                                            json.dump(historial_actual, file, indent=2, default=datetime_to_string)
+                                        
+                                        # Guardar los sensores activos
+                                        self.guardar_sensores_activos(valores, id_ciclo)
+                                        
+                                    except Exception as e:
+                                        logger.error(f"No se pudo guardar paso en {equipo}: {e}")
 
-                            if estado_actual in ["PRE-CALENTAMIENTO", "PRE-ENFRIAMIENTO"] and estado_previo in ["CANCELADO", "FINALIZADO"]:
-                                lote = f"LOTE-{os.urandom(4).hex().upper()}"
+                            if estado_actual in ["FINALIZADO", "CANCELADO"] and (estado_anterior!="FINALIZADO" or estado_anterior!="CANCELADO"):
+                                historial_actual = datos_json.get(equipo, [])
+                                if historial_actual:
+                                    ultimo_paso = historial_actual[-1]
+                                    id_ciclo = ultimo_paso.get("idCiclo")
+                                    
+                                    if id_ciclo is not None:
+                                        if self.finalizar_ciclo(id_ciclo):
+                                            datos_json[equipo] = []
+                                            with open(archivos_json[equipo], "w") as file:
+                                                json.dump([], file)
+                                            logger.info(f"Ciclo finalizado y historial limpiado para {equipo}")
 
+                            # Reemplaza la llamada actual a guardarEnBaseCiclo por:
+                            if estado_anterior in ["FINALIZADO", "CANCELADO"] and estado_actual in ["PRE CALENTAMIENTO", "PRE ENFRIAMIENTO"]:
+                                datos_json[equipo] = []
+                                with open(archivos_json[equipo], "w") as file:
+                                    json.dump([], file)
 
+                                # Obtiene el ID de la receta
+                                id_receta = self.obtener_o_crear_receta(valores)
+                                
+                                if id_receta is not None:
+                                    self.guardarEnBaseCiclo({
+                                        "estadoMaquina": estado_actual,
+                                        "cantidadTorres": valores[4],
+                                        "lote": valores[22],
+                                        "fecha_inicio": datetime.now(),
+                                        "peso": valores[5],
+                                        "idEquipo": valores[0],
+                                        "idReceta": id_receta,  # Usamos el ID obtenido
+                                    })
+                                else:
+                                    logger.error(f"No se pudo obtener/crear la receta para {equipo}")
 
-
-                                # Crear un nuevo ciclo en la base de datos
-                                db: Session = next(get_db())
-                                receta = db.query(Receta).filter(Receta.nombre == id_receta).first()
-                                if not receta:
-                                    logger.error(f"No se encontró la receta con nombre {id_receta}")
-                                    continue
-
-                                nuevo_ciclo = Ciclo(
-                                    estadoMaquina=estado_actual,
-                                    cantidadTorres=cantidad_torres,
-                                    lote=lote,
-                                    cantidadPausas=0,
-                                    tiempoTranscurrido="00:00:00",
-                                    fecha_inicio=datetime.now(),
-                                    fecha_fin=None,
-                                    peso=1,
-                                    idEquipo=id_equipo,
-                                    idReceta=receta.id
-                                )
-
-                                db.add(nuevo_ciclo)
-                                db.commit()
-                                logger.info(f"✅ Nuevo ciclo creado para {equipo} con estado {estado_actual} y lote {lote}")
-
-                            # Actualizar el estado previo
-                            self.estados_previos[equipo] = estado_actual
-
-                            # Procesar datos generales de cocinas y enfriadores
                             if "COCINA" in equipo:
                                 equipo_general = {
                                     "tipo": "COCINA",
                                     "id": cocina_id,
                                     "estado": valores[3],
-                                    "temp_Agua": valores[7],
-                                    "temp_Prod": valores[8],
-                                    "temp_Ingreso": valores[9],
-                                    "temp_Chiller": valores[10],
-                                    "niv_Agua": valores[11],
+                                    "temp_agua": valores[7],
+                                    "temp_prod": valores[8],
+                                    "temp_ingreso": valores[9],
+                                    "temp_chiller": valores[10],
+                                    "niv_agua": valores[11],
                                     "receta": valores[2],
                                     "receta_paso_actual": valores[12],
                                     "tiempoTranscurrido": valores[6],
@@ -216,11 +256,11 @@ class ObtenerNodosOpc:
                                     "tipo": "ENFRIADOR",
                                     "id": enfriador_id,
                                     "estado": valores[3],
-                                    "temp_Agua": valores[8],
-                                    "temp_Prod": valores[9],
-                                    "temp_Ingreso": valores[10],
-                                    "temp_Chiller": valores[11],
-                                    "niv_Agua": valores[12],
+                                    "temp_agua": valores[8],
+                                    "temp_prod": valores[9],
+                                    "temp_ingreso": valores[10],
+                                    "temp_chiller": valores[11],
+                                    "niv_agua": valores[12],
                                     "receta": valores[2],
                                     "receta_paso_actual": valores[6],
                                     "tiempoTranscurrido": valores[7],
@@ -248,7 +288,7 @@ class ObtenerNodosOpc:
                                 enfriador_id += 1
 
                         except Exception as e:
-                            logger.error(f"Error al procesar equipo {equipo}: {e}")
+                            logger.error(f"Error al obtener datos de {equipo}: {e}")
 
                 except Exception as e:
                     logger.error(f"Error al acceder a {interface}: {e}")
@@ -258,148 +298,135 @@ class ObtenerNodosOpc:
 
         return resultado
 
-    def graficoCocinas(self):
-        if not hasattr(self, "verificacion_inicial_realizada"):
-            self.verificacion_inicial_realizada = False
-
-        archivos_cocinas = {
-            "2:COCINA-1-L1": "cocina1.json",
-            "2:COCINA-2-L1": "cocina2.json",
-            "2:COCINA-3-L1": "cocina3.json",
-            "2:COCINA-4-L2": "cocina4.json",
-            "2:COCINA-5-L2": "cocina5.json",
-            "2:COCINA-6-L2": "cocina6.json",
-            "2:ENFRIADOR-1-L1": "enfriador1.json",
-            "2:ENFRIADOR-2-L1": "enfriador2.json",
-            "2:ENFRIADOR-3-L1": "enfriador3.json",
-            "2:ENFRIADOR-4-L1": "enfriador4.json",
-            "2:ENFRIADOR-5-L2": "enfriador5.json",
-            "2:ENFRIADOR-6-L2": "enfriador6.json",
-            "2:ENFRIADOR-7-L2": "enfriador7.json",
-            "2:ENFRIADOR-8-L2": "enfriador8.json"
-        }
-
-        cocinas_data = {}
-
-        for cocina, archivo in archivos_cocinas.items():
-            if os.path.exists(archivo) and os.path.getsize(archivo) > 0:
-                with open(archivo, "r") as file:
-                    try:
-                        cocinas_data[cocina] = json.load(file)
-                    except json.JSONDecodeError:
-                        logging.error(f"Archivo JSON corrupto o vacío: {archivo}")
-                        cocinas_data[cocina] = []
-            else:
-                cocinas_data[cocina] = []
-
-        if not self.verificacion_inicial_realizada:
-            for cocina, datos in cocinas_data.items():
-                if datos:
-                    datos[-1]["tipoFin"] = "CANCELADO"
-                    self.guardarEnBaseDeDatos(cocina, datos)
-                    cocinas_data[cocina] = []
-            self.verificacion_inicial_realizada = True
-
+    def guardarEnBaseCiclo(self, datos):
         try:
-            root_node = self.conexion_servidor.get_root_node().get_child(["0:Objects"]).get_child(["2:ServerInterfaces"])
-
-            interfaces = {
-                "2:Server interface_1": ["2:COCINA-1-L1", "2:COCINA-2-L1", "2:COCINA-3-L1", "2:ENFRIADOR-1-L1", "2:ENFRIADOR-2-L1", "2:ENFRIADOR-3-L1", "2:ENFRIADOR-4-L1"],
-                "2:Server interface_2": ["2:COCINA-4-L2", "2:COCINA-5-L2", "2:COCINA-6-L2", "2:ENFRIADOR-5-L2", "2:ENFRIADOR-6-L2", "2:ENFRIADOR-7-L2", "2:ENFRIADOR-8-L2"]
-            }
-
-            for interface, cocinas in interfaces.items():
-                try:
-                    interface_node = root_node.get_child([interface])
-                    for cocina in cocinas:
-                        lote = self.lotes_actuales.get(cocina, "LOTE-DESCONOCIDO")
-                        try:
-                            cocina_node = interface_node.get_child([cocina])
-                            children = cocina_node.get_children()
-                            valores = [child.get_value() for child in children]
-
-                            if len(valores) < 10:
-                                logging.error(f"No se recibieron suficientes valores en {cocina}")
-                                continue
-
-                            estado = valores[3]
-
-                            if estado == "FINALIZADO":
-                                if cocinas_data[cocina]:
-                                    cocinas_data[cocina][-1]["tipoFin"] = "CICLO COMPLETO"
-                                    self.guardarEnBaseDeDatos(cocina, cocinas_data[cocina])
-                                cocinas_data[cocina] = []
-
-                            elif estado in ["COCINANDO", "ENFRIANDO", "PRE-CALENTAMIENTO", "PRE-ENFRIAMIENTO"]:
-                                ultimo_id = max([paso["id"] for paso in cocinas_data[cocina]], default=0)
-                                cocina_id = ultimo_id + 1
-
-                                paso_data = {
-                                    "id": cocina_id,
-                                    "tiempo": valores[7],
-                                    "temp_Agua": valores[8],
-                                    "temp_Ingreso": valores[10],
-                                    "estado": estado,
-                                    "lote": lote
-                                }
-
-                                cocinas_data[cocina].append(paso_data)
-                                #print(f"✅ Paso registrado para {cocina} ({estado}): {paso_data}")
-
-                            with open(archivos_cocinas[cocina], "w") as file:
-                                json.dump(cocinas_data[cocina], file, indent=4)
-
-                        except KeyError as e:
-                            logging.error(f"Error: Clave no encontrada en cocinas_data -> {e}")
-                        except Exception as e:
-                            logging.error(f"Error al obtener datos de {cocina}: {e}")
-                except Exception as e:
-                    logging.error(f"Error al acceder a {interface}: {e}")
-
-        except Exception as e:
-            logging.error(f"Error al buscar nodos en graficoCocinas: {e}")
-
-    def guardarEnBaseDeDatos(self, cocina: str, datos: list):
-        try:
-            db: Session = next(get_db())
-
-            if not datos:
-                logger.warning(f"No hay datos para guardar en la base de datos para {cocina}")
-                return
-
-            # Obtener el último paso
-            ultimo_paso = datos[-1]
-
-            # Asignar el estado FALLA
-            estado_map = {
-                "FALLA": "FALLA"
-            }
-            estado_valor = estado_map["FALLA"]
-
-            # Crear un nuevo ciclo con los datos del último paso
             nuevo_ciclo = Ciclo(
-                estadoMaquina=estado_valor,
-                cantidadTorres=1,  # Ajustar según los datos del nodo OPC
-                lote=123,  # Ajustar según los datos del nodo OPC
-                cantidadPausas=0,
-                tiempoTranscurrido=ultimo_paso.get("tiempo", 0),
-                fecha_inicio=int(datetime.now().timestamp()),
-                fecha_fin=int(datetime.now().timestamp()),
-                peso=1,
-                idEquipo=int(cocina.split("-")[-1].replace("L", "")),
-                idReceta=int(cocina.split("-")[-1].replace("L", ""))
+                estadoMaquina=datos["estadoMaquina"],
+                cantidadTorres=datos["cantidadTorres"],
+                lote=datos["lote"],
+                fecha_inicio=datos["fecha_inicio"],
+                peso=datos["peso"],
+                idEquipo=datos["idEquipo"],
+                idReceta=datos["idReceta"]
             )
+            self.session.add(nuevo_ciclo)
+            self.session.commit()
+            logger.info(f"Nuevo ciclo creado con ID: {nuevo_ciclo.id}")
+            return nuevo_ciclo.id
+        except Exception as e:
+            self.session.rollback()
+            logger.error(f"Error al guardar nuevo ciclo: {e}")
+            return None
 
-            db.add(nuevo_ciclo)
-            db.commit()
-            logger.info(f"✅ Último paso guardado como CANCELADO en la base de datos para {cocina}")
+    def finalizar_ciclo(self, id_ciclo):
+        """Actualiza los datos de finalización de un ciclo"""
+        try:
+            ciclo = self.session.query(Ciclo).filter_by(id=id_ciclo).first()
+            if ciclo and ciclo.fecha_fin is None:  # Verifica que no se haya finalizado antes
+                fecha_fin = datetime.now()
+                tiempo_transcurrido = str(fecha_fin - ciclo.fecha_inicio)
+                
+                ciclo.fecha_fin = fecha_fin
+                ciclo.cantidadPausas = 1
+                ciclo.tiempoTranscurrido = tiempo_transcurrido
+                
+                self.session.commit()
+                logger.info(f"Ciclo {id_ciclo} finalizado correctamente")
+                return True
+        except Exception as e:
+            self.session.rollback()
+            logger.error(f"Error al finalizar ciclo {id_ciclo}: {e}")
+        return False
+
+    def guardar_sensores_activos(self, valores, id_ciclo):
+        try:
+            fecha_actual = datetime.now()
+            sensores_a_guardar = [
+                {
+                    "idSensor": self.SENSORES_ACTIVOS["temp_agua"],
+                    "valor": valores[8],  # temp_agua
+                },
+                {
+                    "idSensor": self.SENSORES_ACTIVOS["temp_ingreso"],
+                    "valor": valores[9],  # temp_ingreso
+                },
+                {
+                    "idSensor": self.SENSORES_ACTIVOS["temp_prod"],
+                    "valor": valores[10],  # temp_producto
+                },
+                {
+                    "idSensor": self.SENSORES_ACTIVOS["temp_chiller"],
+                    "valor": valores[11],  # temp_chiller
+                },
+                {
+                    "idSensor": self.SENSORES_ACTIVOS["niv_agua"],
+                    "valor": valores[12],  # nivel_agua
+                }
+            ]
+
+            for sensor in sensores_a_guardar:
+                nuevo_registro = SensoresAA(
+                    idSensor=sensor["idSensor"],
+                    valor=sensor["valor"],
+                    idCiclo=id_ciclo,
+                    fechaRegistro=fecha_actual
+                )
+                self.session.add(nuevo_registro)
+            
+            self.session.commit()
+            logger.info(f"Sensores activos guardados para ciclo {id_ciclo}")
+        
+        except Exception as e:
+            self.session.rollback()
+            logger.error(f"Error al guardar sensores activos: {e}")
+
+    def obtener_o_crear_receta(self, valores):
+        try:
+            nombre_receta = valores[2]
+            nro_paso = valores[12]
+            tipo_fin = valores[5]
+
+            # Buscamos la receta por nombre
+            receta = self.session.query(Receta).filter(Receta.nombre == nombre_receta).first()
+
+            if receta:
+                # Si existe, actualizamos los datos por si cambiaron
+                receta.nroPaso = nro_paso
+                receta.tipoFin = tipo_fin
+                self.session.commit()
+                return receta.id
+            else:
+                # Si no existe, obtenemos el último ID
+                ultimo_id = self.session.query(Receta).order_by(Receta.id.desc()).first()
+                nuevo_id = 1 if not ultimo_id else ultimo_id.id + 1
+
+                # Creamos la nueva receta
+                nueva_receta = Receta(
+                    id=nuevo_id,
+                    nombre=nombre_receta,
+                    nroPaso=nro_paso,
+                    tipoFin=tipo_fin
+                )
+                self.session.add(nueva_receta)
+                self.session.commit()
+                logger.info(f"Nueva receta creada - ID: {nuevo_id}, Nombre: {nombre_receta}")
+                return nuevo_id
 
         except Exception as e:
-            db.rollback()
-            logger.error(f"❌ Error al guardar el último paso en la base de datos: {e}")
+            self.session.rollback()
+            logger.error(f"Error al obtener/crear receta: {e}")
+            return None
 
-        finally:
-            db.close()
+    def obtener_id_ciclo_existente(self, lote, idEquipo):
+        try:
+            ciclo = self.session.query(Ciclo).filter_by(lote=lote, idEquipo=idEquipo).order_by(Ciclo.id.desc()).first()
+            if ciclo:
+                return ciclo.id
+            else:
+                return None
+        except Exception as e:
+            logger.error(f"Error al buscar ciclo existente: {e}")
+            return None
 
     async def actualizarRecetas(self):
         lista_recetas = {}

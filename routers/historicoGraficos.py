@@ -6,8 +6,6 @@ from models.ciclo import Ciclo
 from models.equipo import Equipo
 from models.sensores import Sensores
 
-from services.historico import obtener_datos_graficos
-
 from config import db
 
 #http://localhost/historico/<equipo>/<fecha_inicio>/<fecha_fin> 
@@ -65,4 +63,14 @@ def obtener_datos_sensores(
     id_ciclo: int, 
     db : Session = Depends(db.get_db)
 ):
-    return obtener_datos_graficos(db, id_ciclo)
+    ciclo = (
+        db.query(Ciclo)
+        .filter(Ciclo.id == id_ciclo)
+        .first()
+        )
+    diccionario_sensores = (
+        db.query(Sensores)
+        .all()
+    )
+    
+    return ""
