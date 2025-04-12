@@ -17,8 +17,9 @@ from models.sensores import Sensores
 from models.equipo import Equipo
 from models.receta import Receta
 from models.estadoCiclo import EstadoCiclo
+from models.alarmas import Alarma
 
-from routers import equiposDatos, historicoGraficos
+from routers import equiposDatos, historicoGraficos, graficosHistorico, historicoProductividad
 
 import logging
 import asyncio
@@ -50,6 +51,7 @@ dGeneral = ObtenerNodosOpc(opc_client)
 ruta_sql_sensores = os.path.join(ruta_principal, 'query', 'insert_sensores.sql')
 ruta_sql_recetas = os.path.join(ruta_principal, 'query', 'insert_recetas.sql')
 ruta_sql_equipos = os.path.join(ruta_principal, 'query', 'insert_equipos.sql')
+ruta_sql_alarmas = os.path.join(ruta_principal, 'query', 'insert_alarmas.sql')
 
 def cargar_archivo_sql(file_path: str):
     try:
@@ -99,7 +101,12 @@ async def lifespan(app: FastAPI):
             logger.info(f"Cargar registros BDD [Sensores]")
             cargar_archivo_sql(ruta_sql_sensores)
             cargar_archivo_sql(ruta_sql_recetas)
+        if session.query(Equipo).count() == 0:
+            logger.info(f"Carga registro BDD [Equipos Dicc]")
             cargar_archivo_sql(ruta_sql_equipos)
+        if session.query(Alarma).count() == 0:
+            logger.info(f"Cargar datos SQL ALARMAS:")
+            cargar_archivo_sql(ruta_sql_alarmas)
         yield
     finally:
         opc_client.disconnect()
@@ -130,3 +137,21 @@ async def resumen_desmoldeo(websocket: WebSocket, id: str):
 @app.get("/")
 def read_root():
         return {"nodo id": 2, "value": "Hola Mundo- Levanto el server!!!!!!!!!"}
+
+@app.get("/alarmas")
+def listar_alarmas_bdd():
+    session = db.SessionLocal()
+    lista_respuesta = []
+    lista_alarmas = (
+        session.query(Alarma).all()
+    )
+
+    for elem in lista_alarmas:
+        alarma = {}
+        alarma["id_alarma"] = elem.id
+        alarma["descripcion"] = elem.descripcion
+        alarma["tipo"] = elem.tipoAlarma
+        alarma["fecha_registro"] = elem.fechaRegistro
+        lista_respuesta.append(alarma)
+
+    return lista_respuesta
