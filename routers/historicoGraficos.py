@@ -36,7 +36,7 @@ def obtener_lista_ciclos(
         db.query(Ciclo)
         .filter(
             Ciclo.idEquipo == equipo_actual.id,
-            Ciclo.fechaFin.between(fecha_inicio, fecha_fin))
+            Ciclo.fecha_fin.between(fecha_inicio, fecha_fin))
         .all()
         )
 
@@ -49,11 +49,11 @@ def obtener_lista_ciclos(
 
     for elem in ciclos:
         ciclo = {}
-        if elem.estado == "Finalizado":
+        if elem.estadoMaquina == "FINALIZADO":
             ciclo["id_ciclo"] = elem.id
             ciclo["lote"] = elem.lote
-            ciclo["fecha_inicio"] = elem.fechaInicio
-            ciclo["fecha_fin"] = elem.fechaFin
+            ciclo["fecha_inicio"] = elem.fecha_inicio
+            ciclo["fecha_fin"] = elem.fecha_fin
             ciclo["tiempo_transcurrido"] = elem.tiempoTranscurrido
             lista_ciclos.append(ciclo)
 

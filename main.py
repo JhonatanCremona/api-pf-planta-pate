@@ -19,7 +19,7 @@ from models.receta import Receta
 from models.estadoCiclo import EstadoCiclo
 from models.alarmas import Alarma
 
-from routers import equiposDatos, historicoGraficos, graficosHistorico, historicoProductividad
+from routers import equiposDatos, historicoGraficos, historicoProductividad
 
 import logging
 import asyncio

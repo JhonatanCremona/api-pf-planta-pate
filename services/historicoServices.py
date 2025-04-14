@@ -241,25 +241,32 @@ def productividad_equipo(db, fecha_inicio, fecha_fin, id_equipo):
     return respuesta
 
 def obtener_valor_sensores(db, id_ciclo:int, id_sensor:int, tipo):
-    if tipo == "MAX":
-        resultado = (
-            db.query(SensoresAA)
-            .filter(SensoresAA.idCiclo == id_ciclo, SensoresAA.idSensor == id_sensor)
-            .order_by(SensoresAA.valor.desc())
-            .limit(1)
-            .first()
-        )
-        return resultado.valor
-    if tipo == "MIN":
-        resultado = (
-            db.query(SensoresAA)
-            .filter(SensoresAA.idCiclo == id_ciclo, SensoresAA.idSensor == id_sensor)
-            .order_by(SensoresAA.valor.asc())
-            .limit(1)
-            .first()
-        )
-        return resultado.valor
-    return 0
+    try:
+        if tipo == "MAX":
+            resultado = (
+                db.query(SensoresAA)
+                .filter(SensoresAA.idCiclo == id_ciclo, SensoresAA.idSensor == id_sensor)
+                .order_by(SensoresAA.valor.desc())
+                .limit(1)
+                .first()
+            )
+            return resultado.valor if resultado else 0
+
+        if tipo == "MIN":
+            resultado = (
+                db.query(SensoresAA)
+                .filter(SensoresAA.idCiclo == id_ciclo, SensoresAA.idSensor == id_sensor)
+                .order_by(SensoresAA.valor.asc())
+                .limit(1)
+                .first()
+            )
+            return resultado.valor if resultado else 0
+
+        return 0
+        
+    except Exception as e:
+        logger.error(f"Error obteniendo valor de sensor {id_sensor} para ciclo {id_ciclo}: {e}")
+        return 0
 
 def obtener_datos_graficos(db, id_ciclo:int):
     lista_sensores_data = {}

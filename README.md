@@ -34,4 +34,14 @@ Sigue los siguientes pasos para instalar y ejecutar el proyecto:
     pip install passlib
     pip install bcrypt
     pip install --upgrade pip
+    pip install wheel
+    pip install Pillow
+    ```
+
+4. **Crear nuevo venv/Remover antiguo**:
+    ```bash
+    deactivate
+    rm -r venv
+    python -m venv venv
+    Reinstalar dependencias
     ```
