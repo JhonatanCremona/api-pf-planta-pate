@@ -22,42 +22,45 @@ def obtener_lista_ciclos(
     fecha_fin: date = Query(..., description="Fecha de fin (YYYY-MM-DD)"),
     db : Session = Depends(db.get_db)):
 
+    if not fecha_inicio or not fecha_fin:
+        return None
+
     lista_ciclos = []
 
-    equipo_actual = (
-        db.query(Equipo)
-        .filter(Equipo.nombre == equipo)
-        .first()
-    )
-    if not equipo_actual:
-        return {"error": "Equipo no encontrado"}
-
-    ciclos = (
-        db.query(Ciclo)
-        .filter(
-            Ciclo.idEquipo == equipo_actual.id,
-            Ciclo.fecha_fin.between(fecha_inicio, fecha_fin))
-        .all()
+    try:
+        equipo_actual = (
+            db.query(Equipo)
+            .filter(Equipo.nombre == equipo)
+            .first()
         )
+        if not equipo_actual:
+            return None
 
-    if not fecha_inicio:
-        raise HTTPException(status_code=400 , detail="Debe especificar una fecha de inicio.")
-    if not fecha_fin:
-        raise HTTPException(status_code=400, detail="Debe especificar una fecha de fin.")
-    if not ciclos:
-        raise HTTPException(status_code=500, detail="No se encontraron datos de ciclo en la BDD")
+        ciclos = (
+            db.query(Ciclo)
+            .filter(
+                Ciclo.idEquipo == equipo_actual.id,
+                Ciclo.fecha_fin.between(fecha_inicio, fecha_fin))
+            .all()
+            )
+        
+        if not ciclos:
+            return None
 
-    for elem in ciclos:
-        ciclo = {}
-        if elem.estadoMaquina == "FINALIZADO":
-            ciclo["id_ciclo"] = elem.id
-            ciclo["lote"] = elem.lote
-            ciclo["fecha_inicio"] = elem.fecha_inicio
-            ciclo["fecha_fin"] = elem.fecha_fin
-            ciclo["tiempo_transcurrido"] = elem.tiempoTranscurrido
-            lista_ciclos.append(ciclo)
+        for elem in ciclos:
+            ciclo = {}
+            if elem.estadoMaquina == "FINALIZADO":
+                ciclo["id_ciclo"] = elem.id
+                ciclo["lote"] = elem.lote
+                ciclo["fecha_inicio"] = elem.fecha_inicio
+                ciclo["fecha_fin"] = elem.fecha_fin
+                ciclo["tiempo_transcurrido"] = elem.tiempoTranscurrido
+                lista_ciclos.append(ciclo)
 
-    return lista_ciclos
+        return lista_ciclos if lista_ciclos else None
+
+    except Exception:
+        return None
 
 
 @RoutersGraficosH.get("/{equipo}/{id_ciclo}")

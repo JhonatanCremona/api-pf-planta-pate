@@ -473,13 +473,13 @@ def generar_informe_ciclo(db, id_ciclo:int, equipo:str):
     for i, elem in enumerate(temp_producto):
         resultado_fila.append([
             ciclo.id,
-            maquina.nombre, 
-            ciclo.lote, 
+            maquina.nombre,
+            ciclo.lote,
             "Finalizado INC",
             receta.nombre,
-            temp_agua[i].valor, 
-            elem.valor, 
-            nivel_agua[i].valor, 
+            temp_agua[i].valor if i < len(temp_agua) else None, 
+            elem.valor,
+            nivel_agua[i].valor if i < len(nivel_agua) else None,
             elem.fechaRegistro
         ])
 

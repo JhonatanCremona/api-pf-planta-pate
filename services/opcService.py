@@ -56,6 +56,19 @@ class ObtenerNodosOpc:
         self.estados_anteriores = {}
         self.session = next(get_db())
 
+    def calcular_tiempo_transcurrido(self, fecha_inicio):
+        """Calcula el tiempo transcurrido desde fecha_inicio hasta ahora en formato HH:MM:SS"""
+        try:
+            ahora = datetime.now()
+            diferencia = ahora - fecha_inicio
+            horas = diferencia.days * 24 + diferencia.seconds // 3600
+            minutos = (diferencia.seconds % 3600) // 60
+            segundos = diferencia.seconds % 60
+            return f"{horas:02d}:{minutos:02d}:{segundos:02d}"
+        except Exception as e:
+            logger.error(f"Error calculando tiempo transcurrido: {e}")
+            return "00:00:00"
+
     def __del__(self):
         if hasattr(self, 'session'):
             self.session.close()
@@ -216,6 +229,11 @@ class ObtenerNodosOpc:
                                     logger.error(f"No se pudo obtener/crear la receta para {equipo}")
 
                             if "COCINA" in equipo:
+                                ciclo_activo = None
+                                if historial_actual:
+                                    id_ciclo = historial_actual[0].get("idCiclo")
+                                    if id_ciclo:
+                                        ciclo_activo = self.session.query(Ciclo).filter_by(id=id_ciclo).first()
                                 equipo_general = {
                                     "tipo": "COCINA",
                                     "id": cocina_id,
@@ -227,7 +245,7 @@ class ObtenerNodosOpc:
                                     "niv_agua": valores[11],
                                     "receta": valores[2],
                                     "receta_paso_actual": valores[12],
-                                    "tiempoTranscurrido": valores[6],
+                                    "tiempoTranscurrido": self.calcular_tiempo_transcurrido(ciclo_activo.fecha_inicio) if ciclo_activo else "00:00",
                                 }
                                 equipo_detalle = {
                                     "num_cocina": valores[0],
@@ -252,6 +270,11 @@ class ObtenerNodosOpc:
                                 cocina_id += 1
 
                             elif "ENFRIADOR" in equipo:
+                                ciclo_activo = None
+                                if historial_actual:
+                                    id_ciclo = historial_actual[0].get("idCiclo")
+                                    if id_ciclo:
+                                        ciclo_activo = self.session.query(Ciclo).filter_by(id=id_ciclo).first()
                                 equipo_general = {
                                     "tipo": "ENFRIADOR",
                                     "id": enfriador_id,
@@ -263,7 +286,7 @@ class ObtenerNodosOpc:
                                     "niv_agua": valores[12],
                                     "receta": valores[2],
                                     "receta_paso_actual": valores[6],
-                                    "tiempoTranscurrido": valores[7],
+                                    "tiempoTranscurrido": self.calcular_tiempo_transcurrido(ciclo_activo.fecha_inicio) if ciclo_activo else "00:00",
                                 }
                                 equipo_detalle = {
                                     "num_enfriador": valores[0],

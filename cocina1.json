@@ -1,74 +1,8489 @@
 [
-    {
-        "id": 1,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Ingreso": 1,
-        "estado": "PRE-CALENTAMIENTO",
-        "lote": "LOTE-DESCONOCIDO"
-    },
-    {
-        "id": 2,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Ingreso": 1,
-        "estado": "PRE-CALENTAMIENTO",
-        "lote": "LOTE-0ECD265E"
-    },
-    {
-        "id": 3,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Ingreso": 1,
-        "estado": "PRE-CALENTAMIENTO",
-        "lote": "LOTE-0ECD265E"
-    },
-    {
-        "id": 4,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Ingreso": 1,
-        "estado": "PRE-CALENTAMIENTO",
-        "lote": "LOTE-0ECD265E"
-    },
-    {
-        "id": 5,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Ingreso": 1,
-        "estado": "PRE-CALENTAMIENTO",
-        "lote": "LOTE-0ECD265E"
-    },
-    {
-        "id": 6,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Ingreso": 1,
-        "estado": "PRE-CALENTAMIENTO",
-        "lote": "LOTE-0ECD265E"
-    },
-    {
-        "id": 7,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Ingreso": 1,
-        "estado": "PRE-CALENTAMIENTO",
-        "lote": "LOTE-0ECD265E"
-    },
-    {
-        "id": 8,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Ingreso": 1,
-        "estado": "PRE-CALENTAMIENTO",
-        "lote": "LOTE-0ECD265E"
-    },
-    {
-        "id": 9,
-        "tiempo": 1,
-        "temp_Agua": 1,
-        "temp_Ingreso": 1,
-        "estado": "PRE-CALENTAMIENTO",
-        "lote": "LOTE-0ECD265E"
-    }
+  {
+    "id_historial": 1,
+    "tiempo": "2025-04-15 12:32:11",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 2,
+    "tiempo": "2025-04-15 12:32:21",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 3,
+    "tiempo": "2025-04-15 12:32:31",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 4,
+    "tiempo": "2025-04-15 12:32:41",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 5,
+    "tiempo": "2025-04-15 12:32:52",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 6,
+    "tiempo": "2025-04-15 12:33:02",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 7,
+    "tiempo": "2025-04-15 12:33:12",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 8,
+    "tiempo": "2025-04-15 12:33:22",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 9,
+    "tiempo": "2025-04-15 12:33:33",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 10,
+    "tiempo": "2025-04-15 12:33:43",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 11,
+    "tiempo": "2025-04-15 12:33:53",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 12,
+    "tiempo": "2025-04-15 12:34:04",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 13,
+    "tiempo": "2025-04-15 12:34:14",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 14,
+    "tiempo": "2025-04-15 12:34:24",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 15,
+    "tiempo": "2025-04-15 12:34:34",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 16,
+    "tiempo": "2025-04-15 12:34:44",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 17,
+    "tiempo": "2025-04-15 12:34:55",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 18,
+    "tiempo": "2025-04-15 12:35:05",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 19,
+    "tiempo": "2025-04-15 12:35:15",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 20,
+    "tiempo": "2025-04-15 12:35:25",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 21,
+    "tiempo": "2025-04-15 12:35:36",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 22,
+    "tiempo": "2025-04-15 12:35:46",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 23,
+    "tiempo": "2025-04-15 12:35:56",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 24,
+    "tiempo": "2025-04-15 12:36:06",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 25,
+    "tiempo": "2025-04-15 12:36:17",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 26,
+    "tiempo": "2025-04-15 12:36:27",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 27,
+    "tiempo": "2025-04-15 12:36:37",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 28,
+    "tiempo": "2025-04-15 12:36:47",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 29,
+    "tiempo": "2025-04-15 12:36:58",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 30,
+    "tiempo": "2025-04-15 12:37:08",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 31,
+    "tiempo": "2025-04-15 12:37:18",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 32,
+    "tiempo": "2025-04-15 12:37:28",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 33,
+    "tiempo": "2025-04-15 12:37:39",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 34,
+    "tiempo": "2025-04-15 12:37:49",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 35,
+    "tiempo": "2025-04-15 12:37:59",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 36,
+    "tiempo": "2025-04-15 12:38:10",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 37,
+    "tiempo": "2025-04-15 12:38:20",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 38,
+    "tiempo": "2025-04-15 12:38:30",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 39,
+    "tiempo": "2025-04-15 12:38:40",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 40,
+    "tiempo": "2025-04-15 12:38:51",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 41,
+    "tiempo": "2025-04-15 12:39:01",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 42,
+    "tiempo": "2025-04-15 12:39:12",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 43,
+    "tiempo": "2025-04-15 12:39:22",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 44,
+    "tiempo": "2025-04-15 12:39:32",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 45,
+    "tiempo": "2025-04-15 12:39:42",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 46,
+    "tiempo": "2025-04-15 12:39:52",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 47,
+    "tiempo": "2025-04-15 12:40:03",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 48,
+    "tiempo": "2025-04-15 12:40:13",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 49,
+    "tiempo": "2025-04-15 12:40:23",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 50,
+    "tiempo": "2025-04-15 12:40:33",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 51,
+    "tiempo": "2025-04-15 12:40:44",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 52,
+    "tiempo": "2025-04-15 12:40:54",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 53,
+    "tiempo": "2025-04-15 12:41:04",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 54,
+    "tiempo": "2025-04-15 12:41:14",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 55,
+    "tiempo": "2025-04-15 12:41:25",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 56,
+    "tiempo": "2025-04-15 12:41:35",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 57,
+    "tiempo": "2025-04-15 12:41:45",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 58,
+    "tiempo": "2025-04-15 12:41:55",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 59,
+    "tiempo": "2025-04-15 12:42:06",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 60,
+    "tiempo": "2025-04-15 12:42:16",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 61,
+    "tiempo": "2025-04-15 12:42:26",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 62,
+    "tiempo": "2025-04-15 12:42:36",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 63,
+    "tiempo": "2025-04-15 12:42:47",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 64,
+    "tiempo": "2025-04-15 12:42:57",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 65,
+    "tiempo": "2025-04-15 12:43:07",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 66,
+    "tiempo": "2025-04-15 12:43:17",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 67,
+    "tiempo": "2025-04-15 12:43:28",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 68,
+    "tiempo": "2025-04-15 12:43:38",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 69,
+    "tiempo": "2025-04-15 12:43:48",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 70,
+    "tiempo": "2025-04-15 12:43:58",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 71,
+    "tiempo": "2025-04-15 12:44:09",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 72,
+    "tiempo": "2025-04-15 12:44:19",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 73,
+    "tiempo": "2025-04-15 12:44:29",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 74,
+    "tiempo": "2025-04-15 12:44:39",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 75,
+    "tiempo": "2025-04-15 12:44:50",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 76,
+    "tiempo": "2025-04-15 12:45:00",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 77,
+    "tiempo": "2025-04-15 12:45:10",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 78,
+    "tiempo": "2025-04-15 12:45:20",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 79,
+    "tiempo": "2025-04-15 12:45:31",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 80,
+    "tiempo": "2025-04-15 12:45:41",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 81,
+    "tiempo": "2025-04-15 12:45:51",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 82,
+    "tiempo": "2025-04-15 12:46:01",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 83,
+    "tiempo": "2025-04-15 12:46:12",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 84,
+    "tiempo": "2025-04-15 12:46:22",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 85,
+    "tiempo": "2025-04-15 12:46:32",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 86,
+    "tiempo": "2025-04-15 12:46:42",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 87,
+    "tiempo": "2025-04-15 12:46:53",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 88,
+    "tiempo": "2025-04-15 12:47:03",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 89,
+    "tiempo": "2025-04-15 12:47:13",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 90,
+    "tiempo": "2025-04-15 12:47:23",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 91,
+    "tiempo": "2025-04-15 12:47:34",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 92,
+    "tiempo": "2025-04-15 12:47:44",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 93,
+    "tiempo": "2025-04-15 12:47:54",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 94,
+    "tiempo": "2025-04-15 12:48:04",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 95,
+    "tiempo": "2025-04-15 12:48:15",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 96,
+    "tiempo": "2025-04-15 12:48:25",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 97,
+    "tiempo": "2025-04-15 12:48:35",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 98,
+    "tiempo": "2025-04-15 12:48:46",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 99,
+    "tiempo": "2025-04-15 12:48:56",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 100,
+    "tiempo": "2025-04-15 12:49:06",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 101,
+    "tiempo": "2025-04-15 12:49:17",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 102,
+    "tiempo": "2025-04-15 12:49:27",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 103,
+    "tiempo": "2025-04-15 12:49:37",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 104,
+    "tiempo": "2025-04-15 12:49:47",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 105,
+    "tiempo": "2025-04-15 12:49:58",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 106,
+    "tiempo": "2025-04-15 12:50:08",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 107,
+    "tiempo": "2025-04-15 12:50:18",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 108,
+    "tiempo": "2025-04-15 12:50:28",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 109,
+    "tiempo": "2025-04-15 12:50:39",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 110,
+    "tiempo": "2025-04-15 12:50:49",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 111,
+    "tiempo": "2025-04-15 12:50:59",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 112,
+    "tiempo": "2025-04-15 12:51:09",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 113,
+    "tiempo": "2025-04-15 12:51:20",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 114,
+    "tiempo": "2025-04-15 12:51:30",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 115,
+    "tiempo": "2025-04-15 12:51:40",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 116,
+    "tiempo": "2025-04-15 12:51:50",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 117,
+    "tiempo": "2025-04-15 12:52:01",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 118,
+    "tiempo": "2025-04-15 12:52:11",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 119,
+    "tiempo": "2025-04-15 12:52:21",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 120,
+    "tiempo": "2025-04-15 12:52:31",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 121,
+    "tiempo": "2025-04-15 12:52:42",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 122,
+    "tiempo": "2025-04-15 12:52:52",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 123,
+    "tiempo": "2025-04-15 12:53:02",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 124,
+    "tiempo": "2025-04-15 12:53:12",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 125,
+    "tiempo": "2025-04-15 12:53:23",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 126,
+    "tiempo": "2025-04-15 12:53:33",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 127,
+    "tiempo": "2025-04-15 12:53:43",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 128,
+    "tiempo": "2025-04-15 12:53:53",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 129,
+    "tiempo": "2025-04-15 12:54:04",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 130,
+    "tiempo": "2025-04-15 12:54:14",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 131,
+    "tiempo": "2025-04-15 12:54:24",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 132,
+    "tiempo": "2025-04-15 12:54:34",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 133,
+    "tiempo": "2025-04-15 12:54:45",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 134,
+    "tiempo": "2025-04-15 12:54:55",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 135,
+    "tiempo": "2025-04-15 12:55:05",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 136,
+    "tiempo": "2025-04-15 12:55:15",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 137,
+    "tiempo": "2025-04-15 12:55:26",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 138,
+    "tiempo": "2025-04-15 12:55:36",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 139,
+    "tiempo": "2025-04-15 12:55:46",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 140,
+    "tiempo": "2025-04-15 12:55:56",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 141,
+    "tiempo": "2025-04-15 12:56:07",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 142,
+    "tiempo": "2025-04-15 12:56:17",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 143,
+    "tiempo": "2025-04-15 12:56:27",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 144,
+    "tiempo": "2025-04-15 12:56:37",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 145,
+    "tiempo": "2025-04-15 12:56:48",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 146,
+    "tiempo": "2025-04-15 12:56:58",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 147,
+    "tiempo": "2025-04-15 12:57:08",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 148,
+    "tiempo": "2025-04-15 12:57:18",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 149,
+    "tiempo": "2025-04-15 12:57:29",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 150,
+    "tiempo": "2025-04-15 12:57:39",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 151,
+    "tiempo": "2025-04-15 12:57:49",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 152,
+    "tiempo": "2025-04-15 12:57:59",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 153,
+    "tiempo": "2025-04-15 12:58:10",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 154,
+    "tiempo": "2025-04-15 12:58:20",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 155,
+    "tiempo": "2025-04-15 12:58:30",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 156,
+    "tiempo": "2025-04-15 12:58:40",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 157,
+    "tiempo": "2025-04-15 12:58:51",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 158,
+    "tiempo": "2025-04-15 12:59:01",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 159,
+    "tiempo": "2025-04-15 12:59:11",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 160,
+    "tiempo": "2025-04-15 12:59:21",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 161,
+    "tiempo": "2025-04-15 12:59:32",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 162,
+    "tiempo": "2025-04-15 12:59:42",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 163,
+    "tiempo": "2025-04-15 12:59:52",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 164,
+    "tiempo": "2025-04-15 13:00:02",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 165,
+    "tiempo": "2025-04-15 13:00:13",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 166,
+    "tiempo": "2025-04-15 13:00:23",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 167,
+    "tiempo": "2025-04-15 13:00:33",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 168,
+    "tiempo": "2025-04-15 13:00:43",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 169,
+    "tiempo": "2025-04-15 13:00:54",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 170,
+    "tiempo": "2025-04-15 13:01:04",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 171,
+    "tiempo": "2025-04-15 13:01:14",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 172,
+    "tiempo": "2025-04-15 13:01:24",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 173,
+    "tiempo": "2025-04-15 13:01:35",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 174,
+    "tiempo": "2025-04-15 13:01:45",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 175,
+    "tiempo": "2025-04-15 13:01:55",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 176,
+    "tiempo": "2025-04-15 13:02:05",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 177,
+    "tiempo": "2025-04-15 13:02:15",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 178,
+    "tiempo": "2025-04-15 13:02:26",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 179,
+    "tiempo": "2025-04-15 13:02:36",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 180,
+    "tiempo": "2025-04-15 13:02:46",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 181,
+    "tiempo": "2025-04-15 13:02:56",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 182,
+    "tiempo": "2025-04-15 13:03:07",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 183,
+    "tiempo": "2025-04-15 13:03:17",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 184,
+    "tiempo": "2025-04-15 13:03:27",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 185,
+    "tiempo": "2025-04-15 13:03:37",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 186,
+    "tiempo": "2025-04-15 13:03:48",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 187,
+    "tiempo": "2025-04-15 13:03:58",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 188,
+    "tiempo": "2025-04-15 13:04:08",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 189,
+    "tiempo": "2025-04-15 13:04:18",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 190,
+    "tiempo": "2025-04-15 13:04:29",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 191,
+    "tiempo": "2025-04-15 13:04:39",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 192,
+    "tiempo": "2025-04-15 13:04:49",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 193,
+    "tiempo": "2025-04-15 13:04:59",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 194,
+    "tiempo": "2025-04-15 13:05:10",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 195,
+    "tiempo": "2025-04-15 13:05:20",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 196,
+    "tiempo": "2025-04-15 13:05:30",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 197,
+    "tiempo": "2025-04-15 13:05:40",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 198,
+    "tiempo": "2025-04-15 13:05:51",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 199,
+    "tiempo": "2025-04-15 13:06:01",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 200,
+    "tiempo": "2025-04-15 13:06:11",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 201,
+    "tiempo": "2025-04-15 13:06:21",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 202,
+    "tiempo": "2025-04-15 13:06:32",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 203,
+    "tiempo": "2025-04-15 13:06:42",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 204,
+    "tiempo": "2025-04-15 13:06:52",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 205,
+    "tiempo": "2025-04-15 13:07:02",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 206,
+    "tiempo": "2025-04-15 13:07:13",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 207,
+    "tiempo": "2025-04-15 13:07:23",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 208,
+    "tiempo": "2025-04-15 13:07:33",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 209,
+    "tiempo": "2025-04-15 13:07:43",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 210,
+    "tiempo": "2025-04-15 13:07:54",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 211,
+    "tiempo": "2025-04-15 13:08:04",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 212,
+    "tiempo": "2025-04-15 13:08:14",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 213,
+    "tiempo": "2025-04-15 13:08:24",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 214,
+    "tiempo": "2025-04-15 13:08:35",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 215,
+    "tiempo": "2025-04-15 13:08:45",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 216,
+    "tiempo": "2025-04-15 13:08:55",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 217,
+    "tiempo": "2025-04-15 13:09:05",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 218,
+    "tiempo": "2025-04-15 13:09:16",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 219,
+    "tiempo": "2025-04-15 13:09:26",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 220,
+    "tiempo": "2025-04-15 13:09:36",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 221,
+    "tiempo": "2025-04-15 13:09:46",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 222,
+    "tiempo": "2025-04-15 13:09:57",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 223,
+    "tiempo": "2025-04-15 13:10:07",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 224,
+    "tiempo": "2025-04-15 13:10:17",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 225,
+    "tiempo": "2025-04-15 13:10:27",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 226,
+    "tiempo": "2025-04-15 13:10:37",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 227,
+    "tiempo": "2025-04-15 13:10:48",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 228,
+    "tiempo": "2025-04-15 13:10:58",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 229,
+    "tiempo": "2025-04-15 13:11:08",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 230,
+    "tiempo": "2025-04-15 13:11:18",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 231,
+    "tiempo": "2025-04-15 13:11:29",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 232,
+    "tiempo": "2025-04-15 13:11:39",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 233,
+    "tiempo": "2025-04-15 13:11:49",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 234,
+    "tiempo": "2025-04-15 13:11:59",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 235,
+    "tiempo": "2025-04-15 13:12:10",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 236,
+    "tiempo": "2025-04-15 13:12:20",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 237,
+    "tiempo": "2025-04-15 13:12:30",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 238,
+    "tiempo": "2025-04-15 13:12:40",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 239,
+    "tiempo": "2025-04-15 13:12:51",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 240,
+    "tiempo": "2025-04-15 13:13:01",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 241,
+    "tiempo": "2025-04-15 13:13:11",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 242,
+    "tiempo": "2025-04-15 13:13:21",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 243,
+    "tiempo": "2025-04-15 13:13:32",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 244,
+    "tiempo": "2025-04-15 13:13:42",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 245,
+    "tiempo": "2025-04-15 13:13:52",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 246,
+    "tiempo": "2025-04-15 13:14:02",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 247,
+    "tiempo": "2025-04-15 13:14:13",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 248,
+    "tiempo": "2025-04-15 13:14:23",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 249,
+    "tiempo": "2025-04-15 13:14:33",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 250,
+    "tiempo": "2025-04-15 13:14:43",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 251,
+    "tiempo": "2025-04-15 13:14:54",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 252,
+    "tiempo": "2025-04-15 13:15:04",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 253,
+    "tiempo": "2025-04-15 13:15:14",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 254,
+    "tiempo": "2025-04-15 13:15:24",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 255,
+    "tiempo": "2025-04-15 13:15:35",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 256,
+    "tiempo": "2025-04-15 13:15:45",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 257,
+    "tiempo": "2025-04-15 13:15:55",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 258,
+    "tiempo": "2025-04-15 13:16:05",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 259,
+    "tiempo": "2025-04-15 13:16:16",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 260,
+    "tiempo": "2025-04-15 13:16:26",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 261,
+    "tiempo": "2025-04-15 13:16:36",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 262,
+    "tiempo": "2025-04-15 13:16:46",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 263,
+    "tiempo": "2025-04-15 13:16:57",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 264,
+    "tiempo": "2025-04-15 13:17:07",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 265,
+    "tiempo": "2025-04-15 13:17:17",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 266,
+    "tiempo": "2025-04-15 13:17:27",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 267,
+    "tiempo": "2025-04-15 13:17:38",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 268,
+    "tiempo": "2025-04-15 13:17:48",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 269,
+    "tiempo": "2025-04-15 13:17:58",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 270,
+    "tiempo": "2025-04-15 13:18:08",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 271,
+    "tiempo": "2025-04-15 13:18:19",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 272,
+    "tiempo": "2025-04-15 13:18:29",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 273,
+    "tiempo": "2025-04-15 13:18:39",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 274,
+    "tiempo": "2025-04-15 13:18:49",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 275,
+    "tiempo": "2025-04-15 13:19:00",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 276,
+    "tiempo": "2025-04-15 13:19:10",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 277,
+    "tiempo": "2025-04-15 13:19:20",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 278,
+    "tiempo": "2025-04-15 13:19:30",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 279,
+    "tiempo": "2025-04-15 13:19:41",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 280,
+    "tiempo": "2025-04-15 13:19:51",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 281,
+    "tiempo": "2025-04-15 13:20:01",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 282,
+    "tiempo": "2025-04-15 13:20:11",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 283,
+    "tiempo": "2025-04-15 13:20:22",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 284,
+    "tiempo": "2025-04-15 13:20:32",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 285,
+    "tiempo": "2025-04-15 13:20:42",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 286,
+    "tiempo": "2025-04-15 13:20:52",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 287,
+    "tiempo": "2025-04-15 13:21:03",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 288,
+    "tiempo": "2025-04-15 13:21:13",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 289,
+    "tiempo": "2025-04-15 13:21:23",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 290,
+    "tiempo": "2025-04-15 13:21:33",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 291,
+    "tiempo": "2025-04-15 13:21:44",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 292,
+    "tiempo": "2025-04-15 13:21:54",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 293,
+    "tiempo": "2025-04-15 13:22:05",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 294,
+    "tiempo": "2025-04-15 13:22:15",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 295,
+    "tiempo": "2025-04-15 13:22:25",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 296,
+    "tiempo": "2025-04-15 13:22:36",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 297,
+    "tiempo": "2025-04-15 13:22:46",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 298,
+    "tiempo": "2025-04-15 13:22:56",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 299,
+    "tiempo": "2025-04-15 13:23:06",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 300,
+    "tiempo": "2025-04-15 13:23:17",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 301,
+    "tiempo": "2025-04-15 13:23:27",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 302,
+    "tiempo": "2025-04-15 13:23:37",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 303,
+    "tiempo": "2025-04-15 13:23:48",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 304,
+    "tiempo": "2025-04-15 13:23:58",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 305,
+    "tiempo": "2025-04-15 13:24:08",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 306,
+    "tiempo": "2025-04-15 13:24:19",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 307,
+    "tiempo": "2025-04-15 13:24:29",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 308,
+    "tiempo": "2025-04-15 13:24:39",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 309,
+    "tiempo": "2025-04-15 13:24:50",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 310,
+    "tiempo": "2025-04-15 13:25:00",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 311,
+    "tiempo": "2025-04-15 13:25:10",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 312,
+    "tiempo": "2025-04-15 13:25:20",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 313,
+    "tiempo": "2025-04-15 13:25:31",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 314,
+    "tiempo": "2025-04-15 13:25:41",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 315,
+    "tiempo": "2025-04-15 13:25:51",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 316,
+    "tiempo": "2025-04-15 13:26:02",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 317,
+    "tiempo": "2025-04-15 13:26:12",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 318,
+    "tiempo": "2025-04-15 13:26:22",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 319,
+    "tiempo": "2025-04-15 13:26:32",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 320,
+    "tiempo": "2025-04-15 13:26:43",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 321,
+    "tiempo": "2025-04-15 13:26:53",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 322,
+    "tiempo": "2025-04-15 13:27:03",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 323,
+    "tiempo": "2025-04-15 13:27:14",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 324,
+    "tiempo": "2025-04-15 13:27:24",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 325,
+    "tiempo": "2025-04-15 13:27:34",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 326,
+    "tiempo": "2025-04-15 13:27:45",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 327,
+    "tiempo": "2025-04-15 13:27:55",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 328,
+    "tiempo": "2025-04-15 13:28:05",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 329,
+    "tiempo": "2025-04-15 13:28:16",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 330,
+    "tiempo": "2025-04-15 13:28:26",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 331,
+    "tiempo": "2025-04-15 13:28:36",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 332,
+    "tiempo": "2025-04-15 13:28:47",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 333,
+    "tiempo": "2025-04-15 13:28:57",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 334,
+    "tiempo": "2025-04-15 13:29:07",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 335,
+    "tiempo": "2025-04-15 13:29:18",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 336,
+    "tiempo": "2025-04-15 13:29:28",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 337,
+    "tiempo": "2025-04-15 13:29:38",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 338,
+    "tiempo": "2025-04-15 13:29:48",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 339,
+    "tiempo": "2025-04-15 13:29:59",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 340,
+    "tiempo": "2025-04-15 13:30:09",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 341,
+    "tiempo": "2025-04-15 13:30:19",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 342,
+    "tiempo": "2025-04-15 13:30:30",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 343,
+    "tiempo": "2025-04-15 13:30:40",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 344,
+    "tiempo": "2025-04-15 13:30:50",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 345,
+    "tiempo": "2025-04-15 13:31:01",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 346,
+    "tiempo": "2025-04-15 13:31:11",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 347,
+    "tiempo": "2025-04-15 13:31:21",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 348,
+    "tiempo": "2025-04-15 13:31:32",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 349,
+    "tiempo": "2025-04-15 13:31:42",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 350,
+    "tiempo": "2025-04-15 13:31:52",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 351,
+    "tiempo": "2025-04-15 13:32:03",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 352,
+    "tiempo": "2025-04-15 13:32:13",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 353,
+    "tiempo": "2025-04-15 13:32:23",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 354,
+    "tiempo": "2025-04-15 13:32:33",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 355,
+    "tiempo": "2025-04-15 13:32:44",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 356,
+    "tiempo": "2025-04-15 13:32:54",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 357,
+    "tiempo": "2025-04-15 13:33:04",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 358,
+    "tiempo": "2025-04-15 13:33:15",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 359,
+    "tiempo": "2025-04-15 13:33:25",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 360,
+    "tiempo": "2025-04-15 13:33:35",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 361,
+    "tiempo": "2025-04-15 13:33:46",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 362,
+    "tiempo": "2025-04-15 13:33:56",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 363,
+    "tiempo": "2025-04-15 13:34:06",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 364,
+    "tiempo": "2025-04-15 13:34:17",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 365,
+    "tiempo": "2025-04-15 13:34:27",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 366,
+    "tiempo": "2025-04-15 13:34:37",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 367,
+    "tiempo": "2025-04-15 13:34:48",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 368,
+    "tiempo": "2025-04-15 13:34:58",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 369,
+    "tiempo": "2025-04-15 13:35:08",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 370,
+    "tiempo": "2025-04-15 13:35:19",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 371,
+    "tiempo": "2025-04-15 13:35:29",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 372,
+    "tiempo": "2025-04-15 13:35:39",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 373,
+    "tiempo": "2025-04-15 13:35:50",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 374,
+    "tiempo": "2025-04-15 13:36:00",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 375,
+    "tiempo": "2025-04-15 13:36:10",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 376,
+    "tiempo": "2025-04-15 13:36:21",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 377,
+    "tiempo": "2025-04-15 13:36:31",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 378,
+    "tiempo": "2025-04-15 13:36:41",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 379,
+    "tiempo": "2025-04-15 13:36:52",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 380,
+    "tiempo": "2025-04-15 13:37:02",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 381,
+    "tiempo": "2025-04-15 13:37:12",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 382,
+    "tiempo": "2025-04-15 13:37:23",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 383,
+    "tiempo": "2025-04-15 13:37:33",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 384,
+    "tiempo": "2025-04-15 13:37:44",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 385,
+    "tiempo": "2025-04-15 13:37:54",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 386,
+    "tiempo": "2025-04-15 13:38:05",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 387,
+    "tiempo": "2025-04-15 13:38:15",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 388,
+    "tiempo": "2025-04-15 13:38:25",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 389,
+    "tiempo": "2025-04-15 13:38:36",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 390,
+    "tiempo": "2025-04-15 13:38:46",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 391,
+    "tiempo": "2025-04-15 13:38:56",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 392,
+    "tiempo": "2025-04-15 13:39:07",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 393,
+    "tiempo": "2025-04-15 13:39:17",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 394,
+    "tiempo": "2025-04-15 13:39:27",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 395,
+    "tiempo": "2025-04-15 13:39:38",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 396,
+    "tiempo": "2025-04-15 13:39:48",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 397,
+    "tiempo": "2025-04-15 13:39:58",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 398,
+    "tiempo": "2025-04-15 13:40:09",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 399,
+    "tiempo": "2025-04-15 13:40:19",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 400,
+    "tiempo": "2025-04-15 13:40:29",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 401,
+    "tiempo": "2025-04-15 13:40:40",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 402,
+    "tiempo": "2025-04-15 13:40:50",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 403,
+    "tiempo": "2025-04-15 13:41:00",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 404,
+    "tiempo": "2025-04-15 13:41:11",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 405,
+    "tiempo": "2025-04-15 13:41:21",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 406,
+    "tiempo": "2025-04-15 13:41:31",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 407,
+    "tiempo": "2025-04-15 13:41:42",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 408,
+    "tiempo": "2025-04-15 13:41:52",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 409,
+    "tiempo": "2025-04-15 13:42:02",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 410,
+    "tiempo": "2025-04-15 13:42:13",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 411,
+    "tiempo": "2025-04-15 13:42:23",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 412,
+    "tiempo": "2025-04-15 13:42:33",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 413,
+    "tiempo": "2025-04-15 13:42:44",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 414,
+    "tiempo": "2025-04-15 13:42:54",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 415,
+    "tiempo": "2025-04-15 13:43:04",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 416,
+    "tiempo": "2025-04-15 13:43:15",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 417,
+    "tiempo": "2025-04-15 13:43:25",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 418,
+    "tiempo": "2025-04-15 13:43:35",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 419,
+    "tiempo": "2025-04-15 13:43:46",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 420,
+    "tiempo": "2025-04-15 13:43:56",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 421,
+    "tiempo": "2025-04-15 13:44:07",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 422,
+    "tiempo": "2025-04-15 13:44:17",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 423,
+    "tiempo": "2025-04-15 13:44:27",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 424,
+    "tiempo": "2025-04-15 13:44:37",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 425,
+    "tiempo": "2025-04-15 13:44:48",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 426,
+    "tiempo": "2025-04-15 13:44:58",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 427,
+    "tiempo": "2025-04-15 13:45:09",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 428,
+    "tiempo": "2025-04-15 13:45:19",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 429,
+    "tiempo": "2025-04-15 13:45:29",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 430,
+    "tiempo": "2025-04-15 13:45:40",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 431,
+    "tiempo": "2025-04-15 13:45:50",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 432,
+    "tiempo": "2025-04-15 13:46:00",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 433,
+    "tiempo": "2025-04-15 13:46:10",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 434,
+    "tiempo": "2025-04-15 13:46:21",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 435,
+    "tiempo": "2025-04-15 13:46:31",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 436,
+    "tiempo": "2025-04-15 13:46:41",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 437,
+    "tiempo": "2025-04-15 13:46:52",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 438,
+    "tiempo": "2025-04-15 13:47:02",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 439,
+    "tiempo": "2025-04-15 13:47:12",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 440,
+    "tiempo": "2025-04-15 13:47:22",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 441,
+    "tiempo": "2025-04-15 13:47:33",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 442,
+    "tiempo": "2025-04-15 13:47:43",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 443,
+    "tiempo": "2025-04-15 13:47:53",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 444,
+    "tiempo": "2025-04-15 13:48:03",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 445,
+    "tiempo": "2025-04-15 13:48:14",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 446,
+    "tiempo": "2025-04-15 13:48:24",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 447,
+    "tiempo": "2025-04-15 13:48:34",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 448,
+    "tiempo": "2025-04-15 13:48:45",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 449,
+    "tiempo": "2025-04-15 13:48:55",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 450,
+    "tiempo": "2025-04-15 13:49:05",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 451,
+    "tiempo": "2025-04-15 13:49:15",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 452,
+    "tiempo": "2025-04-15 13:49:26",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 453,
+    "tiempo": "2025-04-15 13:49:36",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 454,
+    "tiempo": "2025-04-15 13:49:46",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 455,
+    "tiempo": "2025-04-15 13:49:57",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 456,
+    "tiempo": "2025-04-15 13:50:07",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 457,
+    "tiempo": "2025-04-15 13:50:17",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 458,
+    "tiempo": "2025-04-15 13:50:27",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 459,
+    "tiempo": "2025-04-15 13:50:38",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 460,
+    "tiempo": "2025-04-15 13:50:48",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 461,
+    "tiempo": "2025-04-15 13:50:58",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 462,
+    "tiempo": "2025-04-15 13:51:09",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 463,
+    "tiempo": "2025-04-15 13:51:19",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 464,
+    "tiempo": "2025-04-15 13:51:29",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 465,
+    "tiempo": "2025-04-15 13:51:39",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 466,
+    "tiempo": "2025-04-15 13:51:50",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 467,
+    "tiempo": "2025-04-15 13:52:00",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 468,
+    "tiempo": "2025-04-15 13:52:10",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 469,
+    "tiempo": "2025-04-15 13:52:20",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 470,
+    "tiempo": "2025-04-15 13:52:31",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 471,
+    "tiempo": "2025-04-15 13:52:41",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 472,
+    "tiempo": "2025-04-15 13:52:51",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 473,
+    "tiempo": "2025-04-15 13:53:02",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 474,
+    "tiempo": "2025-04-15 13:53:12",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 475,
+    "tiempo": "2025-04-15 13:53:22",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 476,
+    "tiempo": "2025-04-15 13:53:32",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 477,
+    "tiempo": "2025-04-15 13:53:43",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 478,
+    "tiempo": "2025-04-15 13:53:53",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 479,
+    "tiempo": "2025-04-15 13:54:03",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 480,
+    "tiempo": "2025-04-15 13:54:14",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 481,
+    "tiempo": "2025-04-15 13:54:24",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 482,
+    "tiempo": "2025-04-15 13:54:34",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 483,
+    "tiempo": "2025-04-15 13:54:44",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 484,
+    "tiempo": "2025-04-15 13:54:55",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 485,
+    "tiempo": "2025-04-15 13:55:05",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 486,
+    "tiempo": "2025-04-15 13:55:15",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 487,
+    "tiempo": "2025-04-15 13:55:25",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 488,
+    "tiempo": "2025-04-15 13:55:36",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 489,
+    "tiempo": "2025-04-15 13:55:46",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 490,
+    "tiempo": "2025-04-15 13:55:56",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 491,
+    "tiempo": "2025-04-15 13:56:07",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 492,
+    "tiempo": "2025-04-15 13:56:17",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 493,
+    "tiempo": "2025-04-15 13:56:27",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 494,
+    "tiempo": "2025-04-15 13:56:37",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 495,
+    "tiempo": "2025-04-15 13:56:48",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 496,
+    "tiempo": "2025-04-15 13:56:58",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 497,
+    "tiempo": "2025-04-15 13:57:08",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 498,
+    "tiempo": "2025-04-15 13:57:18",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 499,
+    "tiempo": "2025-04-15 13:57:29",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 500,
+    "tiempo": "2025-04-15 13:57:39",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 501,
+    "tiempo": "2025-04-15 13:57:49",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 502,
+    "tiempo": "2025-04-15 13:57:59",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 503,
+    "tiempo": "2025-04-15 13:58:10",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 504,
+    "tiempo": "2025-04-15 13:58:20",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 505,
+    "tiempo": "2025-04-15 13:58:30",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 506,
+    "tiempo": "2025-04-15 13:58:40",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 507,
+    "tiempo": "2025-04-15 13:58:51",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 508,
+    "tiempo": "2025-04-15 13:59:01",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 509,
+    "tiempo": "2025-04-15 13:59:11",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 510,
+    "tiempo": "2025-04-15 13:59:21",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 511,
+    "tiempo": "2025-04-15 13:59:32",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 512,
+    "tiempo": "2025-04-15 13:59:42",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 513,
+    "tiempo": "2025-04-15 13:59:52",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 514,
+    "tiempo": "2025-04-15 14:00:03",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 515,
+    "tiempo": "2025-04-15 14:00:13",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 516,
+    "tiempo": "2025-04-15 14:00:23",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 517,
+    "tiempo": "2025-04-15 14:00:33",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 518,
+    "tiempo": "2025-04-15 14:00:43",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 519,
+    "tiempo": "2025-04-15 14:00:54",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 520,
+    "tiempo": "2025-04-15 14:01:04",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 521,
+    "tiempo": "2025-04-15 14:01:14",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 522,
+    "tiempo": "2025-04-15 14:01:24",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 523,
+    "tiempo": "2025-04-15 14:01:35",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 524,
+    "tiempo": "2025-04-15 14:01:45",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 525,
+    "tiempo": "2025-04-15 14:01:55",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 526,
+    "tiempo": "2025-04-15 14:02:05",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 527,
+    "tiempo": "2025-04-15 14:02:16",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 528,
+    "tiempo": "2025-04-15 14:02:26",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 529,
+    "tiempo": "2025-04-15 14:02:36",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 530,
+    "tiempo": "2025-04-15 14:02:46",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 531,
+    "tiempo": "2025-04-15 14:02:57",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 532,
+    "tiempo": "2025-04-15 14:03:07",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 533,
+    "tiempo": "2025-04-15 14:03:17",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 534,
+    "tiempo": "2025-04-15 14:03:27",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 535,
+    "tiempo": "2025-04-15 14:03:38",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 536,
+    "tiempo": "2025-04-15 14:03:48",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 537,
+    "tiempo": "2025-04-15 14:03:58",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 538,
+    "tiempo": "2025-04-15 14:04:08",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 539,
+    "tiempo": "2025-04-15 14:04:19",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 540,
+    "tiempo": "2025-04-15 14:04:29",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 541,
+    "tiempo": "2025-04-15 14:04:39",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 542,
+    "tiempo": "2025-04-15 14:04:49",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 543,
+    "tiempo": "2025-04-15 14:05:00",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 544,
+    "tiempo": "2025-04-15 14:05:10",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 545,
+    "tiempo": "2025-04-15 14:05:20",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 546,
+    "tiempo": "2025-04-15 14:05:30",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 547,
+    "tiempo": "2025-04-15 14:05:41",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 548,
+    "tiempo": "2025-04-15 14:05:51",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 549,
+    "tiempo": "2025-04-15 14:06:01",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 550,
+    "tiempo": "2025-04-15 14:06:11",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 551,
+    "tiempo": "2025-04-15 14:06:22",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 552,
+    "tiempo": "2025-04-15 14:06:32",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 553,
+    "tiempo": "2025-04-15 14:06:42",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 554,
+    "tiempo": "2025-04-15 14:06:52",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 555,
+    "tiempo": "2025-04-15 14:07:03",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 556,
+    "tiempo": "2025-04-15 14:07:13",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 557,
+    "tiempo": "2025-04-15 14:07:23",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 558,
+    "tiempo": "2025-04-15 14:07:33",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 559,
+    "tiempo": "2025-04-15 14:07:44",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 560,
+    "tiempo": "2025-04-15 14:07:54",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 561,
+    "tiempo": "2025-04-15 14:08:04",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 562,
+    "tiempo": "2025-04-15 14:08:14",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 563,
+    "tiempo": "2025-04-15 14:08:25",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 564,
+    "tiempo": "2025-04-15 14:08:35",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 565,
+    "tiempo": "2025-04-15 14:08:45",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 566,
+    "tiempo": "2025-04-15 14:08:55",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 567,
+    "tiempo": "2025-04-15 14:09:06",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 568,
+    "tiempo": "2025-04-15 14:09:16",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 569,
+    "tiempo": "2025-04-15 14:09:26",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 570,
+    "tiempo": "2025-04-15 14:09:36",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 571,
+    "tiempo": "2025-04-15 14:09:47",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 572,
+    "tiempo": "2025-04-15 14:09:57",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 573,
+    "tiempo": "2025-04-15 14:10:07",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 574,
+    "tiempo": "2025-04-15 14:10:17",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 575,
+    "tiempo": "2025-04-15 14:10:28",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 576,
+    "tiempo": "2025-04-15 14:10:38",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 577,
+    "tiempo": "2025-04-15 14:10:48",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 578,
+    "tiempo": "2025-04-15 14:10:58",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 579,
+    "tiempo": "2025-04-15 14:11:09",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 580,
+    "tiempo": "2025-04-15 14:11:19",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 581,
+    "tiempo": "2025-04-15 14:11:29",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 582,
+    "tiempo": "2025-04-15 14:11:39",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 583,
+    "tiempo": "2025-04-15 14:11:50",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 584,
+    "tiempo": "2025-04-15 14:12:00",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 585,
+    "tiempo": "2025-04-15 14:12:10",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 586,
+    "tiempo": "2025-04-15 14:12:21",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 587,
+    "tiempo": "2025-04-15 14:12:31",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 588,
+    "tiempo": "2025-04-15 14:12:41",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 589,
+    "tiempo": "2025-04-15 14:12:51",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 590,
+    "tiempo": "2025-04-15 14:13:01",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 591,
+    "tiempo": "2025-04-15 14:13:12",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 592,
+    "tiempo": "2025-04-15 14:13:22",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 593,
+    "tiempo": "2025-04-15 14:13:32",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 594,
+    "tiempo": "2025-04-15 14:13:42",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 595,
+    "tiempo": "2025-04-15 14:13:53",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 596,
+    "tiempo": "2025-04-15 14:14:03",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 597,
+    "tiempo": "2025-04-15 14:14:13",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 598,
+    "tiempo": "2025-04-15 14:14:23",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 599,
+    "tiempo": "2025-04-15 14:14:34",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 600,
+    "tiempo": "2025-04-15 14:14:44",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 601,
+    "tiempo": "2025-04-15 14:14:54",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 602,
+    "tiempo": "2025-04-15 14:15:04",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 603,
+    "tiempo": "2025-04-15 14:15:15",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 604,
+    "tiempo": "2025-04-15 14:15:25",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 605,
+    "tiempo": "2025-04-15 14:15:35",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 606,
+    "tiempo": "2025-04-15 14:15:45",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 607,
+    "tiempo": "2025-04-15 14:15:56",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 608,
+    "tiempo": "2025-04-15 14:16:06",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 609,
+    "tiempo": "2025-04-15 14:16:16",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 610,
+    "tiempo": "2025-04-15 14:16:27",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 611,
+    "tiempo": "2025-04-15 14:16:37",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 612,
+    "tiempo": "2025-04-15 14:16:47",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 613,
+    "tiempo": "2025-04-15 14:16:57",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 614,
+    "tiempo": "2025-04-15 14:17:08",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 615,
+    "tiempo": "2025-04-15 14:17:18",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 616,
+    "tiempo": "2025-04-15 14:17:28",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 617,
+    "tiempo": "2025-04-15 14:17:38",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 618,
+    "tiempo": "2025-04-15 14:17:49",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 619,
+    "tiempo": "2025-04-15 14:17:59",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 620,
+    "tiempo": "2025-04-15 14:18:09",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 621,
+    "tiempo": "2025-04-15 14:18:19",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 622,
+    "tiempo": "2025-04-15 14:18:30",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 623,
+    "tiempo": "2025-04-15 14:18:40",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 624,
+    "tiempo": "2025-04-15 14:18:50",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 625,
+    "tiempo": "2025-04-15 14:19:00",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 626,
+    "tiempo": "2025-04-15 14:19:11",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 627,
+    "tiempo": "2025-04-15 14:19:21",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 628,
+    "tiempo": "2025-04-15 14:19:31",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 629,
+    "tiempo": "2025-04-15 14:19:41",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 630,
+    "tiempo": "2025-04-15 14:19:52",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 631,
+    "tiempo": "2025-04-15 14:20:02",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 632,
+    "tiempo": "2025-04-15 14:20:12",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 633,
+    "tiempo": "2025-04-15 14:20:22",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 634,
+    "tiempo": "2025-04-15 14:20:33",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 635,
+    "tiempo": "2025-04-15 14:20:43",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 636,
+    "tiempo": "2025-04-15 14:20:53",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 637,
+    "tiempo": "2025-04-15 14:21:04",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 638,
+    "tiempo": "2025-04-15 14:21:14",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 639,
+    "tiempo": "2025-04-15 14:21:24",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 640,
+    "tiempo": "2025-04-15 14:21:34",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 641,
+    "tiempo": "2025-04-15 14:21:44",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 642,
+    "tiempo": "2025-04-15 14:21:55",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 643,
+    "tiempo": "2025-04-15 14:22:05",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 644,
+    "tiempo": "2025-04-15 14:22:15",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 645,
+    "tiempo": "2025-04-15 14:22:25",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 646,
+    "tiempo": "2025-04-15 14:22:36",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 647,
+    "tiempo": "2025-04-15 14:22:46",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 648,
+    "tiempo": "2025-04-15 14:22:56",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 649,
+    "tiempo": "2025-04-15 14:23:07",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 650,
+    "tiempo": "2025-04-15 14:23:17",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 651,
+    "tiempo": "2025-04-15 14:23:27",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 652,
+    "tiempo": "2025-04-15 14:23:37",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 653,
+    "tiempo": "2025-04-15 14:23:48",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 654,
+    "tiempo": "2025-04-15 14:23:58",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 655,
+    "tiempo": "2025-04-15 14:24:08",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 656,
+    "tiempo": "2025-04-15 14:24:18",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 657,
+    "tiempo": "2025-04-15 14:24:29",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 658,
+    "tiempo": "2025-04-15 14:24:39",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 659,
+    "tiempo": "2025-04-15 14:24:49",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 660,
+    "tiempo": "2025-04-15 14:24:59",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 661,
+    "tiempo": "2025-04-15 14:25:10",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 662,
+    "tiempo": "2025-04-15 14:25:20",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 663,
+    "tiempo": "2025-04-15 14:25:30",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 664,
+    "tiempo": "2025-04-15 14:25:40",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 665,
+    "tiempo": "2025-04-15 14:25:51",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 666,
+    "tiempo": "2025-04-15 14:26:01",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 667,
+    "tiempo": "2025-04-15 14:26:11",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 668,
+    "tiempo": "2025-04-15 14:26:22",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 669,
+    "tiempo": "2025-04-15 14:26:32",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 670,
+    "tiempo": "2025-04-15 14:26:42",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 671,
+    "tiempo": "2025-04-15 14:26:52",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 672,
+    "tiempo": "2025-04-15 14:27:03",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 673,
+    "tiempo": "2025-04-15 14:27:13",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 674,
+    "tiempo": "2025-04-15 14:27:23",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 675,
+    "tiempo": "2025-04-15 14:27:33",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 676,
+    "tiempo": "2025-04-15 14:27:44",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 677,
+    "tiempo": "2025-04-15 14:27:54",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 678,
+    "tiempo": "2025-04-15 14:28:04",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 679,
+    "tiempo": "2025-04-15 14:28:14",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 680,
+    "tiempo": "2025-04-15 14:28:25",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 681,
+    "tiempo": "2025-04-15 14:28:35",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 682,
+    "tiempo": "2025-04-15 14:28:45",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 683,
+    "tiempo": "2025-04-15 14:28:55",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 684,
+    "tiempo": "2025-04-15 14:29:06",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 685,
+    "tiempo": "2025-04-15 14:29:16",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 686,
+    "tiempo": "2025-04-15 14:29:26",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 687,
+    "tiempo": "2025-04-15 14:29:37",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 688,
+    "tiempo": "2025-04-15 14:29:47",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 689,
+    "tiempo": "2025-04-15 14:29:57",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 690,
+    "tiempo": "2025-04-15 14:30:07",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 691,
+    "tiempo": "2025-04-15 14:30:18",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 692,
+    "tiempo": "2025-04-15 14:30:28",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 693,
+    "tiempo": "2025-04-15 14:30:38",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 694,
+    "tiempo": "2025-04-15 14:30:48",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 695,
+    "tiempo": "2025-04-15 14:30:59",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 696,
+    "tiempo": "2025-04-15 14:31:09",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 697,
+    "tiempo": "2025-04-15 14:31:19",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 698,
+    "tiempo": "2025-04-15 14:31:29",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 699,
+    "tiempo": "2025-04-15 14:31:40",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 700,
+    "tiempo": "2025-04-15 14:31:50",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 701,
+    "tiempo": "2025-04-15 14:32:00",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 702,
+    "tiempo": "2025-04-15 14:32:10",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 703,
+    "tiempo": "2025-04-15 14:32:21",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 704,
+    "tiempo": "2025-04-15 14:32:31",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 705,
+    "tiempo": "2025-04-15 14:32:41",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 706,
+    "tiempo": "2025-04-15 14:32:52",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 707,
+    "tiempo": "2025-04-15 14:33:02",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 708,
+    "tiempo": "2025-04-15 14:33:12",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 709,
+    "tiempo": "2025-04-15 14:33:22",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 710,
+    "tiempo": "2025-04-15 14:33:33",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 711,
+    "tiempo": "2025-04-15 14:33:43",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 712,
+    "tiempo": "2025-04-15 14:33:53",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 713,
+    "tiempo": "2025-04-15 14:34:03",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 714,
+    "tiempo": "2025-04-15 14:34:14",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 715,
+    "tiempo": "2025-04-15 14:34:24",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 716,
+    "tiempo": "2025-04-15 14:34:34",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 717,
+    "tiempo": "2025-04-15 14:34:44",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 718,
+    "tiempo": "2025-04-15 14:34:55",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 719,
+    "tiempo": "2025-04-15 14:35:05",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 720,
+    "tiempo": "2025-04-15 14:35:15",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 721,
+    "tiempo": "2025-04-15 14:35:26",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 722,
+    "tiempo": "2025-04-15 14:35:36",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 723,
+    "tiempo": "2025-04-15 14:35:46",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 724,
+    "tiempo": "2025-04-15 14:35:56",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 725,
+    "tiempo": "2025-04-15 14:36:07",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 726,
+    "tiempo": "2025-04-15 14:36:17",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 727,
+    "tiempo": "2025-04-15 14:36:27",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 728,
+    "tiempo": "2025-04-15 14:36:37",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 729,
+    "tiempo": "2025-04-15 14:36:48",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 730,
+    "tiempo": "2025-04-15 14:36:58",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 731,
+    "tiempo": "2025-04-15 14:37:08",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 732,
+    "tiempo": "2025-04-15 14:37:18",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 733,
+    "tiempo": "2025-04-15 14:37:29",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 734,
+    "tiempo": "2025-04-15 14:37:39",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 735,
+    "tiempo": "2025-04-15 14:37:49",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 736,
+    "tiempo": "2025-04-15 14:50:38",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 737,
+    "tiempo": "2025-04-15 14:50:49",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 738,
+    "tiempo": "2025-04-15 14:51:00",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 739,
+    "tiempo": "2025-04-15 14:51:01",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 740,
+    "tiempo": "2025-04-15 14:51:11",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 741,
+    "tiempo": "2025-04-15 14:51:21",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 742,
+    "tiempo": "2025-04-15 14:51:32",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 743,
+    "tiempo": "2025-04-15 14:51:42",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 744,
+    "tiempo": "2025-04-15 14:51:52",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 745,
+    "tiempo": "2025-04-15 14:52:03",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 746,
+    "tiempo": "2025-04-15 14:52:13",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 747,
+    "tiempo": "2025-04-15 14:52:23",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 748,
+    "tiempo": "2025-04-15 14:52:34",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 749,
+    "tiempo": "2025-04-15 14:52:44",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 750,
+    "tiempo": "2025-04-15 14:52:54",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 751,
+    "tiempo": "2025-04-15 14:53:05",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 752,
+    "tiempo": "2025-04-15 14:53:15",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 753,
+    "tiempo": "2025-04-15 14:53:25",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 754,
+    "tiempo": "2025-04-15 14:53:36",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 755,
+    "tiempo": "2025-04-15 14:53:46",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 756,
+    "tiempo": "2025-04-15 14:53:56",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 757,
+    "tiempo": "2025-04-15 14:54:07",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 758,
+    "tiempo": "2025-04-15 14:54:17",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 759,
+    "tiempo": "2025-04-15 14:54:27",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 760,
+    "tiempo": "2025-04-15 14:54:38",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 761,
+    "tiempo": "2025-04-15 14:54:48",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 762,
+    "tiempo": "2025-04-15 14:54:58",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 763,
+    "tiempo": "2025-04-15 14:55:09",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 764,
+    "tiempo": "2025-04-15 14:55:19",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 765,
+    "tiempo": "2025-04-15 14:55:29",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 766,
+    "tiempo": "2025-04-15 14:55:40",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 767,
+    "tiempo": "2025-04-15 14:55:50",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 768,
+    "tiempo": "2025-04-15 14:56:00",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 769,
+    "tiempo": "2025-04-15 14:56:11",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 770,
+    "tiempo": "2025-04-15 14:56:21",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 771,
+    "tiempo": "2025-04-15 14:56:31",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 772,
+    "tiempo": "2025-04-15 14:56:42",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 773,
+    "tiempo": "2025-04-15 14:56:52",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 774,
+    "tiempo": "2025-04-15 14:57:02",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 775,
+    "tiempo": "2025-04-15 14:57:13",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 776,
+    "tiempo": "2025-04-15 14:57:23",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 777,
+    "tiempo": "2025-04-15 14:57:33",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 778,
+    "tiempo": "2025-04-15 14:57:44",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 779,
+    "tiempo": "2025-04-15 14:57:54",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 780,
+    "tiempo": "2025-04-15 14:58:04",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 781,
+    "tiempo": "2025-04-15 14:58:15",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 782,
+    "tiempo": "2025-04-15 14:58:25",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 783,
+    "tiempo": "2025-04-15 14:58:35",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 784,
+    "tiempo": "2025-04-15 14:58:46",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 785,
+    "tiempo": "2025-04-15 14:58:56",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 786,
+    "tiempo": "2025-04-15 14:59:06",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 787,
+    "tiempo": "2025-04-15 14:59:17",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 788,
+    "tiempo": "2025-04-15 14:59:27",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 789,
+    "tiempo": "2025-04-15 14:59:37",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 790,
+    "tiempo": "2025-04-15 14:59:48",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 791,
+    "tiempo": "2025-04-15 14:59:58",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 792,
+    "tiempo": "2025-04-15 15:00:08",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 793,
+    "tiempo": "2025-04-15 15:00:19",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 794,
+    "tiempo": "2025-04-15 15:00:29",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 795,
+    "tiempo": "2025-04-15 15:00:39",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 796,
+    "tiempo": "2025-04-15 15:00:50",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 797,
+    "tiempo": "2025-04-15 15:01:00",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 798,
+    "tiempo": "2025-04-15 15:01:10",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 799,
+    "tiempo": "2025-04-15 15:01:21",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 800,
+    "tiempo": "2025-04-15 15:01:31",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 801,
+    "tiempo": "2025-04-15 15:01:41",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 802,
+    "tiempo": "2025-04-15 15:01:52",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 803,
+    "tiempo": "2025-04-15 15:02:02",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 804,
+    "tiempo": "2025-04-15 15:02:12",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 805,
+    "tiempo": "2025-04-15 15:02:23",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 806,
+    "tiempo": "2025-04-15 15:02:33",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 807,
+    "tiempo": "2025-04-15 15:02:43",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 808,
+    "tiempo": "2025-04-15 15:02:53",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 809,
+    "tiempo": "2025-04-15 15:03:04",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 810,
+    "tiempo": "2025-04-15 15:03:14",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 811,
+    "tiempo": "2025-04-15 15:03:24",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 812,
+    "tiempo": "2025-04-15 15:03:35",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 813,
+    "tiempo": "2025-04-15 15:03:45",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 814,
+    "tiempo": "2025-04-15 15:03:55",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 815,
+    "tiempo": "2025-04-15 15:04:06",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 816,
+    "tiempo": "2025-04-15 15:04:16",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 817,
+    "tiempo": "2025-04-15 15:04:26",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 818,
+    "tiempo": "2025-04-15 15:04:37",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 819,
+    "tiempo": "2025-04-15 15:04:47",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 820,
+    "tiempo": "2025-04-15 15:04:57",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 821,
+    "tiempo": "2025-04-15 15:05:08",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 822,
+    "tiempo": "2025-04-15 15:05:18",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 823,
+    "tiempo": "2025-04-15 15:05:28",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 824,
+    "tiempo": "2025-04-15 15:05:39",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 825,
+    "tiempo": "2025-04-15 15:05:49",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 826,
+    "tiempo": "2025-04-15 15:06:00",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 827,
+    "tiempo": "2025-04-15 15:06:10",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 828,
+    "tiempo": "2025-04-15 15:06:20",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 829,
+    "tiempo": "2025-04-15 15:06:31",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 830,
+    "tiempo": "2025-04-15 15:06:41",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 831,
+    "tiempo": "2025-04-15 15:06:51",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 832,
+    "tiempo": "2025-04-15 15:07:02",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 833,
+    "tiempo": "2025-04-15 15:07:12",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 834,
+    "tiempo": "2025-04-15 15:07:22",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 835,
+    "tiempo": "2025-04-15 15:07:33",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 836,
+    "tiempo": "2025-04-15 15:07:43",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 837,
+    "tiempo": "2025-04-15 15:07:53",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 838,
+    "tiempo": "2025-04-15 15:08:03",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 839,
+    "tiempo": "2025-04-15 15:08:14",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 840,
+    "tiempo": "2025-04-15 15:08:24",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 841,
+    "tiempo": "2025-04-15 15:08:34",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 842,
+    "tiempo": "2025-04-15 15:08:45",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 843,
+    "tiempo": "2025-04-15 15:08:55",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 844,
+    "tiempo": "2025-04-15 15:09:05",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 845,
+    "tiempo": "2025-04-15 15:09:16",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 846,
+    "tiempo": "2025-04-15 15:09:26",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 847,
+    "tiempo": "2025-04-15 15:09:36",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 848,
+    "tiempo": "2025-04-15 15:09:47",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 849,
+    "tiempo": "2025-04-15 15:09:57",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 850,
+    "tiempo": "2025-04-15 15:10:07",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 851,
+    "tiempo": "2025-04-15 15:10:18",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 852,
+    "tiempo": "2025-04-15 15:10:28",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 853,
+    "tiempo": "2025-04-15 15:10:38",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 854,
+    "tiempo": "2025-04-15 15:10:49",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 855,
+    "tiempo": "2025-04-15 15:10:59",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 856,
+    "tiempo": "2025-04-15 15:11:09",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 857,
+    "tiempo": "2025-04-15 15:11:20",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 858,
+    "tiempo": "2025-04-15 15:11:30",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 859,
+    "tiempo": "2025-04-15 15:11:40",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 860,
+    "tiempo": "2025-04-15 15:11:51",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 861,
+    "tiempo": "2025-04-15 15:12:01",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 862,
+    "tiempo": "2025-04-15 15:12:11",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 863,
+    "tiempo": "2025-04-15 15:12:22",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 864,
+    "tiempo": "2025-04-15 15:12:32",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 865,
+    "tiempo": "2025-04-15 15:12:42",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 866,
+    "tiempo": "2025-04-15 15:12:53",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 867,
+    "tiempo": "2025-04-15 15:13:03",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 868,
+    "tiempo": "2025-04-15 15:13:13",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 869,
+    "tiempo": "2025-04-15 15:13:24",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 870,
+    "tiempo": "2025-04-15 15:13:34",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 871,
+    "tiempo": "2025-04-15 15:13:44",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 872,
+    "tiempo": "2025-04-15 15:13:55",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 873,
+    "tiempo": "2025-04-15 15:14:05",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 874,
+    "tiempo": "2025-04-15 15:14:15",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 875,
+    "tiempo": "2025-04-15 15:14:26",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 876,
+    "tiempo": "2025-04-15 15:14:36",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 877,
+    "tiempo": "2025-04-15 15:14:46",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 878,
+    "tiempo": "2025-04-15 15:14:57",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 879,
+    "tiempo": "2025-04-15 15:15:07",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 880,
+    "tiempo": "2025-04-15 15:15:17",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 881,
+    "tiempo": "2025-04-15 15:15:28",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 882,
+    "tiempo": "2025-04-15 15:15:38",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 883,
+    "tiempo": "2025-04-15 15:15:48",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 884,
+    "tiempo": "2025-04-15 15:15:59",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 885,
+    "tiempo": "2025-04-15 15:16:09",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 886,
+    "tiempo": "2025-04-15 15:16:19",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 887,
+    "tiempo": "2025-04-15 15:16:30",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 888,
+    "tiempo": "2025-04-15 15:16:40",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 889,
+    "tiempo": "2025-04-15 15:16:50",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 890,
+    "tiempo": "2025-04-15 15:17:01",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 891,
+    "tiempo": "2025-04-15 15:17:11",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 892,
+    "tiempo": "2025-04-15 15:17:21",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 893,
+    "tiempo": "2025-04-15 15:17:32",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 894,
+    "tiempo": "2025-04-15 15:17:42",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 895,
+    "tiempo": "2025-04-15 15:17:52",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 896,
+    "tiempo": "2025-04-15 15:18:03",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 897,
+    "tiempo": "2025-04-15 15:18:13",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 898,
+    "tiempo": "2025-04-15 15:18:23",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 899,
+    "tiempo": "2025-04-15 15:18:34",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 900,
+    "tiempo": "2025-04-15 15:18:44",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 901,
+    "tiempo": "2025-04-15 15:18:54",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 902,
+    "tiempo": "2025-04-15 15:19:05",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 903,
+    "tiempo": "2025-04-15 15:19:15",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 904,
+    "tiempo": "2025-04-15 15:19:25",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 905,
+    "tiempo": "2025-04-15 15:19:36",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 906,
+    "tiempo": "2025-04-15 15:19:46",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 907,
+    "tiempo": "2025-04-15 15:19:56",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 908,
+    "tiempo": "2025-04-15 15:20:07",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 909,
+    "tiempo": "2025-04-15 15:20:17",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 910,
+    "tiempo": "2025-04-15 15:20:27",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 911,
+    "tiempo": "2025-04-15 15:20:38",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 912,
+    "tiempo": "2025-04-15 15:20:48",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 913,
+    "tiempo": "2025-04-15 15:20:58",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 914,
+    "tiempo": "2025-04-15 15:21:09",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 915,
+    "tiempo": "2025-04-15 15:21:19",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 916,
+    "tiempo": "2025-04-15 15:21:29",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 917,
+    "tiempo": "2025-04-15 15:21:40",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 918,
+    "tiempo": "2025-04-15 15:21:50",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 919,
+    "tiempo": "2025-04-15 15:22:00",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 920,
+    "tiempo": "2025-04-15 15:22:11",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 921,
+    "tiempo": "2025-04-15 15:22:21",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 922,
+    "tiempo": "2025-04-15 15:22:31",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 923,
+    "tiempo": "2025-04-15 15:22:42",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 924,
+    "tiempo": "2025-04-15 15:22:52",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 925,
+    "tiempo": "2025-04-15 15:23:02",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 926,
+    "tiempo": "2025-04-15 15:23:13",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 927,
+    "tiempo": "2025-04-15 15:23:23",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 928,
+    "tiempo": "2025-04-15 15:23:33",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 929,
+    "tiempo": "2025-04-15 15:23:44",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 930,
+    "tiempo": "2025-04-15 15:23:54",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 931,
+    "tiempo": "2025-04-15 15:24:04",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 932,
+    "tiempo": "2025-04-15 15:24:15",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 933,
+    "tiempo": "2025-04-15 15:24:25",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 934,
+    "tiempo": "2025-04-15 15:24:35",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 935,
+    "tiempo": "2025-04-15 15:24:46",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 936,
+    "tiempo": "2025-04-15 15:24:56",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 937,
+    "tiempo": "2025-04-15 15:25:06",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 938,
+    "tiempo": "2025-04-15 15:25:17",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 939,
+    "tiempo": "2025-04-15 15:25:27",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 940,
+    "tiempo": "2025-04-15 15:25:37",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 941,
+    "tiempo": "2025-04-15 15:25:48",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 942,
+    "tiempo": "2025-04-15 15:25:58",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  },
+  {
+    "id_historial": 943,
+    "tiempo": "2025-04-15 15:26:09",
+    "temp_agua": 1,
+    "temp_ingreso": 1,
+    "estado": "PRE CALENTAMIENTO",
+    "niv_agua": 1,
+    "idCiclo": 104
+  }
 ]
