@@ -22,8 +22,10 @@ def generar_reporte_productividad(id_equipo, fecha_inicio, fecha_fin, db):
     fecha_inicio = datetime.combine(fecha_inicio, datetime.min.time())
     fecha_fin = datetime.combine(fecha_fin, datetime.max.time())
     lista_ciclos: list[Ciclo] = [] 
-    linea1 = [7,8,9,10]
-    linea2 = [11,12,13,14]
+    #linea1 = [7,8,9,10]
+    #linea2 = [11,12,13,14]
+    linea1 = [1,2,3]
+    linea2 = [4,5,6]
 
     nombre_maquina = ""
     def buscarReceta(id_receta):
@@ -166,8 +168,10 @@ def productividad_equipo(db, fecha_inicio, fecha_fin, id_equipo):
     respuesta = {}
     lista_receta = defaultdict(list)
     lista_ciclos: list[Ciclo] = [] 
-    linea1 = [7,8,9,10]
-    linea2 = [11,12,13,14]
+    #linea1 = [7,8,9,10]
+    #linea2 = [11,12,13,14]
+    linea1 = [1,2,3]
+    linea2 = [4,5,6]
 
     if id_equipo == 15:
         lista_ciclos= (
@@ -204,9 +208,9 @@ def productividad_equipo(db, fecha_inicio, fecha_fin, id_equipo):
 
     for elem in lista_ciclos:
         total_peso+= elem.peso
-        if elem.estadoMaquina == "Finalizado":
+        if elem.estadoMaquina == "FINALIZADO":
             cantidad_ciclos_correctos+= 1
-        if elem.estadoMaquina == "Cancelado":
+        if elem.estadoMaquina == "CANCELADO":
             cantidad_ciclos_incorectos+= 1
         
         lista_receta[elem.idReceta].append(elem)

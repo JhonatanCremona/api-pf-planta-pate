@@ -121,6 +121,8 @@ app.add_middleware(
 )
 
 app.include_router(historicoGraficos.RoutersGraficosH)
+app.include_router(historicoProductividad.RouterProductividad)
+#app.include_router(graficosHistorico.RoutersGraficosH)
 
 @app.websocket("/ws/{id}")
 async def resumen_desmoldeo(websocket: WebSocket, id: str):

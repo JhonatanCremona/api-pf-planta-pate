@@ -78,6 +78,7 @@
                                     "tiempo": valores[7],
                                     "temp_Agua": valores[8],
                                     "temp_Ingreso": valores[10],
+                                    "temp_Prod": valores[9],
                                     "estado": estado,
                                 }
 

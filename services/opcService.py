@@ -172,8 +172,9 @@ class ObtenerNodosOpc:
                                     nuevo_paso = {
                                         "id_historial": nuevo_id,
                                         "tiempo": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-                                        "temp_agua": valores[8],
+                                        "temp_agua": valores[7],
                                         "temp_ingreso": valores[9],
+                                        "temp_prod": valores[8],
                                         "estado": valores[3],
                                         "niv_agua": valores[11],
                                         "idCiclo": id_ciclo,
@@ -193,14 +194,14 @@ class ObtenerNodosOpc:
                                     except Exception as e:
                                         logger.error(f"No se pudo guardar paso en {equipo}: {e}")
 
-                            if estado_actual in ["FINALIZADO", "CANCELADO"] and (estado_anterior!="FINALIZADO" or estado_anterior!="CANCELADO"):
+                            if estado_actual in ["FINALIZADO", "CANCELADO"] and estado_anterior not in ["FINALIZADO", "CANCELADO"]:
                                 historial_actual = datos_json.get(equipo, [])
                                 if historial_actual:
                                     ultimo_paso = historial_actual[-1]
                                     id_ciclo = ultimo_paso.get("idCiclo")
                                     
                                     if id_ciclo is not None:
-                                        if self.finalizar_ciclo(id_ciclo):
+                                        if self.finalizar_ciclo(id_ciclo, estado_actual):  # Pasamos el estado actual
                                             datos_json[equipo] = []
                                             with open(archivos_json[equipo], "w") as file:
                                                 json.dump([], file)
@@ -341,8 +342,7 @@ class ObtenerNodosOpc:
             logger.error(f"Error al guardar nuevo ciclo: {e}")
             return None
 
-    def finalizar_ciclo(self, id_ciclo):
-        """Actualiza los datos de finalización de un ciclo"""
+    def finalizar_ciclo(self, id_ciclo, estado_maquina):
         try:
             ciclo = self.session.query(Ciclo).filter_by(id=id_ciclo).first()
             if ciclo and ciclo.fecha_fin is None:  # Verifica que no se haya finalizado antes
@@ -352,9 +352,10 @@ class ObtenerNodosOpc:
                 ciclo.fecha_fin = fecha_fin
                 ciclo.cantidadPausas = 1
                 ciclo.tiempoTranscurrido = tiempo_transcurrido
+                ciclo.estadoMaquina = estado_maquina
                 
                 self.session.commit()
-                logger.info(f"Ciclo {id_ciclo} finalizado correctamente")
+                logger.info(f"Ciclo {id_ciclo} finalizado correctamente con estado {estado_maquina}")
                 return True
         except Exception as e:
             self.session.rollback()
