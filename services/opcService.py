@@ -135,8 +135,8 @@ class ObtenerNodosOpc:
                     interface_node = root_node.get_child([interface])
 
                     estados_validos = {
-                        "COCINA": ["OPERATIVO", "PAUSA", "PRE CALENTAMIENTO"],
-                        "ENFRIADOR": ["PRE ENFRIAMIENTO", "OPERATIVO", "PAUSA"]
+                        "COCINA": ["OPERATIVO", "PAUSA", "PRE OPERATIVO"],
+                        "ENFRIADOR": ["PRE OPERATIVO", "OPERATIVO", "PAUSA"]
                     }
                     
                     estados_anteriores = {}
@@ -157,8 +157,8 @@ class ObtenerNodosOpc:
                             self.estados_anteriores[equipo] = estado_actual
 
                             estados_continuos = {
-                                "COCINA": ["OPERATIVO", "PRE CALENTAMIENTO", "PAUSA"],
-                                "ENFRIADOR": ["OPERATIVO", "PRE ENFRIAMIENTO", "PAUSA"]
+                                "COCINA": ["OPERATIVO", "PRE OPERATIVO", "PAUSA"],
+                                "ENFRIADOR": ["OPERATIVO", "PRE OPERATIVO", "PAUSA"]
                             }
 
                             if estado_actual in estados_continuos[tipo]:
@@ -168,17 +168,29 @@ class ObtenerNodosOpc:
                                 id_ciclo = self.obtener_id_ciclo_existente(valores[22], valores[0])
 
                                 if id_ciclo is not None:
-                                    # Guardar el paso en el historial JSON como lo haces actualmente
-                                    nuevo_paso = {
-                                        "id_historial": nuevo_id,
-                                        "tiempo": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-                                        "temp_agua": valores[7],
-                                        "temp_ingreso": valores[9],
-                                        "temp_prod": valores[8],
-                                        "estado": valores[3],
-                                        "niv_agua": valores[11],
-                                        "idCiclo": id_ciclo,
-                                    }
+                                    # Crear nuevo_paso según el tipo de equipo
+                                    if tipo == "COCINA":
+                                        nuevo_paso = {
+                                            "id_historial": nuevo_id,
+                                            "tiempo": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                                            "temp_agua": valores[7],    # indices específicos para cocina
+                                            "temp_ingreso": valores[9],
+                                            "temp_prod": valores[8],
+                                            "estado": valores[3],
+                                            "niv_agua": valores[11],
+                                            "idCiclo": id_ciclo,
+                                        }
+                                    else:  # ENFRIADOR
+                                        nuevo_paso = {
+                                            "id_historial": nuevo_id,
+                                            "tiempo": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                                            "temp_agua": valores[8],    # indices específicos para enfriador
+                                            "temp_ingreso": valores[10],
+                                            "temp_prod": valores[9],
+                                            "estado": valores[3],
+                                            "niv_agua": valores[12],
+                                            "idCiclo": id_ciclo,
+                                        }
 
                                     historial_actual.append(nuevo_paso)
                                     datos_json[equipo] = historial_actual
@@ -188,8 +200,14 @@ class ObtenerNodosOpc:
                                         with open(archivos_json[equipo], "w") as file:
                                             json.dump(historial_actual, file, indent=2, default=datetime_to_string)
                                         
-                                        # Guardar los sensores activos
-                                        self.guardar_sensores_activos(valores, id_ciclo)
+                                        # También ajustar los índices en guardar_sensores_activos
+                                        if id_ciclo is not None:
+                                            # Verificar que el ciclo no esté finalizado
+                                            ciclo = self.session.query(Ciclo).filter_by(id=id_ciclo).first()
+                                            if ciclo and ciclo.fecha_fin is None:
+                                                self.guardar_sensores_activos(valores, id_ciclo, tipo)
+                                            else:
+                                                logger.warning(f"No se guardaron sensores: ciclo {id_ciclo} finalizado o no existe")
                                         
                                     except Exception as e:
                                         logger.error(f"No se pudo guardar paso en {equipo}: {e}")
@@ -208,7 +226,7 @@ class ObtenerNodosOpc:
                                             logger.info(f"Ciclo finalizado y historial limpiado para {equipo}")
 
                             # Reemplaza la llamada actual a guardarEnBaseCiclo por:
-                            if estado_anterior in ["FINALIZADO", "CANCELADO"] and estado_actual in ["PRE CALENTAMIENTO", "PRE ENFRIAMIENTO"]:
+                            if estado_anterior in ["FINALIZADO", "CANCELADO"] and estado_actual in ["PRE OPERATIVO", "PRE OPERATIVO"]:
                                 datos_json[equipo] = []
                                 with open(archivos_json[equipo], "w") as file:
                                     json.dump([], file)
@@ -247,6 +265,7 @@ class ObtenerNodosOpc:
                                     "receta": valores[2],
                                     "receta_paso_actual": valores[12],
                                     "tiempoTranscurrido": self.calcular_tiempo_transcurrido(ciclo_activo.fecha_inicio) if ciclo_activo else "00:00",
+                                    "ultimo_ciclo": self.obtener_ultimo_ciclo_finalizado(valores[0]),
                                 }
                                 equipo_detalle = {
                                     "num_cocina": valores[0],
@@ -288,6 +307,7 @@ class ObtenerNodosOpc:
                                     "receta": valores[2],
                                     "receta_paso_actual": valores[6],
                                     "tiempoTranscurrido": self.calcular_tiempo_transcurrido(ciclo_activo.fecha_inicio) if ciclo_activo else "00:00",
+                                    "ultimo_ciclo": self.obtener_ultimo_ciclo_finalizado(valores[0]),
                                 }
                                 equipo_detalle = {
                                     "num_enfriador": valores[0],
@@ -321,6 +341,23 @@ class ObtenerNodosOpc:
             logger.error(f"Error al buscar nodos: {e}")
 
         return resultado
+
+    def obtener_ultimo_ciclo_finalizado(self, id_equipo):
+        try:
+            ultimo_ciclo = (
+                self.session.query(Ciclo)
+                .filter(
+                    Ciclo.idEquipo == id_equipo,
+                    Ciclo.estadoMaquina.in_(["FINALIZADO", "CANCELADO"]),
+                    Ciclo.fecha_fin.isnot(None)
+                )
+                .order_by(Ciclo.fecha_fin.desc())
+                .first()
+            )
+            return ultimo_ciclo.id if ultimo_ciclo else None
+        except Exception as e:
+            logger.error(f"Error al obtener último ciclo finalizado para equipo {id_equipo}: {e}")
+            return None
 
     def guardarEnBaseCiclo(self, datos):
         try:
@@ -362,43 +399,72 @@ class ObtenerNodosOpc:
             logger.error(f"Error al finalizar ciclo {id_ciclo}: {e}")
         return False
 
-    def guardar_sensores_activos(self, valores, id_ciclo):
+    def guardar_sensores_activos(self, valores, id_ciclo, tipo):
         try:
+            # Primero verificamos si el ciclo está finalizado
+            ciclo = self.session.query(Ciclo).filter_by(id=id_ciclo).first()
+            if not ciclo or ciclo.fecha_fin is not None:
+                logger.warning(f"No se pueden guardar sensores: ciclo {id_ciclo} no existe o ya está finalizado")
+                return
+                
             fecha_actual = datetime.now()
-            sensores_a_guardar = [
-                {
-                    "idSensor": self.SENSORES_ACTIVOS["temp_agua"],
-                    "valor": valores[8],  # temp_agua
-                },
-                {
-                    "idSensor": self.SENSORES_ACTIVOS["temp_ingreso"],
-                    "valor": valores[9],  # temp_ingreso
-                },
-                {
-                    "idSensor": self.SENSORES_ACTIVOS["temp_prod"],
-                    "valor": valores[10],  # temp_producto
-                },
-                {
-                    "idSensor": self.SENSORES_ACTIVOS["temp_chiller"],
-                    "valor": valores[11],  # temp_chiller
-                },
-                {
-                    "idSensor": self.SENSORES_ACTIVOS["niv_agua"],
-                    "valor": valores[12],  # nivel_agua
-                }
-            ]
-
-            for sensor in sensores_a_guardar:
-                nuevo_registro = SensoresAA(
-                    idSensor=sensor["idSensor"],
-                    valor=sensor["valor"],
-                    idCiclo=id_ciclo,
-                    fechaRegistro=fecha_actual
-                )
-                self.session.add(nuevo_registro)
             
-            self.session.commit()
-            logger.info(f"Sensores activos guardados para ciclo {id_ciclo}")
+            # Definir índices según el tipo
+            if tipo == "COCINA":
+                indices = {
+                    "temp_agua": 7,
+                    "temp_ingreso": 9,
+                    "temp_prod": 8,
+                    "temp_chiller": 10,
+                    "niv_agua": 11
+                }
+            else:  # ENFRIADOR
+                indices = {
+                    "temp_agua": 8,
+                    "temp_ingreso": 10,
+                    "temp_prod": 9,
+                    "temp_chiller": 11,
+                    "niv_agua": 12
+                }
+
+            # Verificar que el ciclo sigue activo antes de guardar
+            if ciclo.fecha_fin is None:
+                sensores_a_guardar = [
+                    {
+                        "idSensor": self.SENSORES_ACTIVOS["temp_agua"],
+                        "valor": valores[indices["temp_agua"]],
+                    },
+                    {
+                        "idSensor": self.SENSORES_ACTIVOS["temp_ingreso"],
+                        "valor": valores[indices["temp_ingreso"]],
+                    },
+                    {
+                        "idSensor": self.SENSORES_ACTIVOS["temp_prod"],
+                        "valor": valores[indices["temp_prod"]],
+                    },
+                    {
+                        "idSensor": self.SENSORES_ACTIVOS["temp_chiller"],
+                        "valor": valores[indices["temp_chiller"]],
+                    },
+                    {
+                        "idSensor": self.SENSORES_ACTIVOS["niv_agua"],
+                        "valor": valores[indices["niv_agua"]],
+                    }
+                ]
+
+                for sensor in sensores_a_guardar:
+                    nuevo_registro = SensoresAA(
+                        idSensor=sensor["idSensor"],
+                        valor=sensor["valor"],
+                        idCiclo=id_ciclo,
+                        fechaRegistro=fecha_actual
+                    )
+                    self.session.add(nuevo_registro)
+                
+                self.session.commit()
+                logger.info(f"Sensores activos guardados para ciclo {id_ciclo}")
+            else:
+                logger.warning(f"No se guardaron sensores: el ciclo {id_ciclo} ya está finalizado")
         
         except Exception as e:
             self.session.rollback()

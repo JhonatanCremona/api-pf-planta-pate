@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "id_historial": 1,
+    "tiempo": "2025-04-23 13:35:23",
+    "temp_agua": 50.43,
+    "temp_ingreso": 5,
+    "temp_prod": 5.26,
+    "estado": "PRE OPERATIVO",
+    "niv_agua": 1595.92,
+    "idCiclo": 1998
+  },
+  {
+    "id_historial": 2,
+    "tiempo": "2025-04-23 13:35:35",
+    "temp_agua": 74.83,
+    "temp_ingreso": 5,
+    "temp_prod": 5.77,
+    "estado": "PRE OPERATIVO",
+    "niv_agua": 1578.47,
+    "idCiclo": 1998
+  }
+]

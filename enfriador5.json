@@ -1,1 +1,102 @@
-[]
+[
+  {
+    "id_historial": 1,
+    "tiempo": "2025-04-23 13:33:41",
+    "temp_agua": 12.27,
+    "temp_ingreso": 5,
+    "temp_prod": 48.31,
+    "estado": "PRE OPERATIVO",
+    "niv_agua": 1575.27,
+    "idCiclo": 1988
+  },
+  {
+    "id_historial": 2,
+    "tiempo": "2025-04-23 13:33:54",
+    "temp_agua": 2.73,
+    "temp_ingreso": 5,
+    "temp_prod": 34.33,
+    "estado": "PRE OPERATIVO",
+    "niv_agua": 1578.39,
+    "idCiclo": 1988
+  },
+  {
+    "id_historial": 3,
+    "tiempo": "2025-04-23 13:34:07",
+    "temp_agua": 2,
+    "temp_ingreso": 5,
+    "temp_prod": 24.86,
+    "estado": "PRE OPERATIVO",
+    "niv_agua": 1623.1,
+    "idCiclo": 1988
+  },
+  {
+    "id_historial": 4,
+    "tiempo": "2025-04-23 13:34:20",
+    "temp_agua": 2,
+    "temp_ingreso": 5,
+    "temp_prod": 18.44,
+    "estado": "PRE OPERATIVO",
+    "niv_agua": 1643.8,
+    "idCiclo": 1988
+  },
+  {
+    "id_historial": 5,
+    "tiempo": "2025-04-23 13:34:32",
+    "temp_agua": 2,
+    "temp_ingreso": 5,
+    "temp_prod": 14.1,
+    "estado": "PRE OPERATIVO",
+    "niv_agua": 1621.51,
+    "idCiclo": 1988
+  },
+  {
+    "id_historial": 6,
+    "tiempo": "2025-04-23 13:34:45",
+    "temp_agua": 2,
+    "temp_ingreso": 5,
+    "temp_prod": 11.16,
+    "estado": "PRE OPERATIVO",
+    "niv_agua": 1609.76,
+    "idCiclo": 1988
+  },
+  {
+    "id_historial": 7,
+    "tiempo": "2025-04-23 13:34:58",
+    "temp_agua": 2,
+    "temp_ingreso": 5,
+    "temp_prod": 9.3,
+    "estado": "PRE OPERATIVO",
+    "niv_agua": 1597.9,
+    "idCiclo": 1988
+  },
+  {
+    "id_historial": 8,
+    "tiempo": "2025-04-23 13:35:10",
+    "temp_agua": 2,
+    "temp_ingreso": 5,
+    "temp_prod": 7.91,
+    "estado": "PRE OPERATIVO",
+    "niv_agua": 1561.37,
+    "idCiclo": 1988
+  },
+  {
+    "id_historial": 9,
+    "tiempo": "2025-04-23 13:35:23",
+    "temp_agua": 2,
+    "temp_ingreso": 5,
+    "temp_prod": 7.03,
+    "estado": "PRE OPERATIVO",
+    "niv_agua": 1572.5,
+    "idCiclo": 1988
+  },
+  {
+    "id_historial": 10,
+    "tiempo": "2025-04-23 13:35:35",
+    "temp_agua": 4.01,
+    "temp_ingreso": 5,
+    "temp_prod": 6.38,
+    "estado": "OPERATIVO",
+    "niv_agua": 1962.67,
+    "idCiclo": 1988
+  }
+]
