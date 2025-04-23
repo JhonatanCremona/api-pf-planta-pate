@@ -56,17 +56,31 @@ class ObtenerNodosOpc:
         self.estados_anteriores = {}
         self.session = next(get_db())
 
-    def calcular_tiempo_transcurrido(self, fecha_inicio):
-        """Calcula el tiempo transcurrido desde fecha_inicio hasta ahora en formato HH:MM:SS"""
+    def calcular_tiempo_transcurrido_json(self, historial_actual):
+        """Calcula el tiempo transcurrido entre el primer y último registro en el historial JSON"""
         try:
-            ahora = datetime.now()
-            diferencia = ahora - fecha_inicio
+            if not historial_actual or len(historial_actual) < 2:
+                return "00:00:00"
+                
+            # Obtener el primer y último registro del historial
+            primer_registro = historial_actual[0]
+            ultimo_registro = historial_actual[-1]
+            
+            # Obtener timestamps de ambos registros
+            tiempo_inicio = datetime.strptime(primer_registro["tiempo"], "%Y-%m-%d %H:%M:%S")
+            tiempo_final = datetime.strptime(ultimo_registro["tiempo"], "%Y-%m-%d %H:%M:%S")
+            
+            # Calcular diferencia
+            diferencia = tiempo_final - tiempo_inicio
+            
+            # Formatear resultado
             horas = diferencia.days * 24 + diferencia.seconds // 3600
             minutos = (diferencia.seconds % 3600) // 60
             segundos = diferencia.seconds % 60
+            
             return f"{horas:02d}:{minutos:02d}:{segundos:02d}"
         except Exception as e:
-            logger.error(f"Error calculando tiempo transcurrido: {e}")
+            logger.error(f"Error calculando tiempo transcurrido desde JSON: {e}")
             return "00:00:00"
 
     def __del__(self):
@@ -161,56 +175,47 @@ class ObtenerNodosOpc:
                                 "ENFRIADOR": ["OPERATIVO", "PRE OPERATIVO", "PAUSA"]
                             }
 
+                            # Modificar esta sección en datosGenerales()
                             if estado_actual in estados_continuos[tipo]:
                                 historial_actual = datos_json.get(equipo, [])
                                 nuevo_id = len(historial_actual) + 1
 
+                                # Generar id_ciclo sin dependencia de base de datos
                                 id_ciclo = self.obtener_id_ciclo_existente(valores[22], valores[0])
+                                
+                                # Crear nuevo_paso según el tipo de equipo
+                                if tipo == "COCINA":
+                                    nuevo_paso = {
+                                        "id_historial": nuevo_id,
+                                        "tiempo": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                                        "temp_agua": valores[7],
+                                        "temp_ingreso": valores[9],
+                                        "temp_prod": valores[8],
+                                        "estado": valores[3],
+                                        "niv_agua": valores[11],
+                                        "idCiclo": id_ciclo,
+                                    }
+                                else:  # ENFRIADOR
+                                    nuevo_paso = {
+                                        "id_historial": nuevo_id,
+                                        "tiempo": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                                        "temp_agua": valores[8],
+                                        "temp_ingreso": valores[10],
+                                        "temp_prod": valores[9],
+                                        "estado": valores[3],
+                                        "niv_agua": valores[12],
+                                        "idCiclo": id_ciclo,
+                                    }
 
-                                if id_ciclo is not None:
-                                    # Crear nuevo_paso según el tipo de equipo
-                                    if tipo == "COCINA":
-                                        nuevo_paso = {
-                                            "id_historial": nuevo_id,
-                                            "tiempo": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-                                            "temp_agua": valores[7],    # indices específicos para cocina
-                                            "temp_ingreso": valores[9],
-                                            "temp_prod": valores[8],
-                                            "estado": valores[3],
-                                            "niv_agua": valores[11],
-                                            "idCiclo": id_ciclo,
-                                        }
-                                    else:  # ENFRIADOR
-                                        nuevo_paso = {
-                                            "id_historial": nuevo_id,
-                                            "tiempo": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-                                            "temp_agua": valores[8],    # indices específicos para enfriador
-                                            "temp_ingreso": valores[10],
-                                            "temp_prod": valores[9],
-                                            "estado": valores[3],
-                                            "niv_agua": valores[12],
-                                            "idCiclo": id_ciclo,
-                                        }
+                                historial_actual.append(nuevo_paso)
+                                datos_json[equipo] = historial_actual
 
-                                    historial_actual.append(nuevo_paso)
-                                    datos_json[equipo] = historial_actual
-
-                                    try:
-                                        # Guardar el historial JSON
-                                        with open(archivos_json[equipo], "w") as file:
-                                            json.dump(historial_actual, file, indent=2, default=datetime_to_string)
-                                        
-                                        # También ajustar los índices en guardar_sensores_activos
-                                        if id_ciclo is not None:
-                                            # Verificar que el ciclo no esté finalizado
-                                            ciclo = self.session.query(Ciclo).filter_by(id=id_ciclo).first()
-                                            if ciclo and ciclo.fecha_fin is None:
-                                                self.guardar_sensores_activos(valores, id_ciclo, tipo)
-                                            else:
-                                                logger.warning(f"No se guardaron sensores: ciclo {id_ciclo} finalizado o no existe")
-                                        
-                                    except Exception as e:
-                                        logger.error(f"No se pudo guardar paso en {equipo}: {e}")
+                                try:
+                                    # Guardar el historial JSON
+                                    with open(archivos_json[equipo], "w") as file:
+                                        json.dump(historial_actual, file, indent=2, default=datetime_to_string)
+                                except Exception as e:
+                                    logger.error(f"No se pudo guardar paso en {equipo}: {e}")
 
                             if estado_actual in ["FINALIZADO", "CANCELADO"] and estado_anterior not in ["FINALIZADO", "CANCELADO"]:
                                 historial_actual = datos_json.get(equipo, [])
@@ -230,22 +235,22 @@ class ObtenerNodosOpc:
                                 datos_json[equipo] = []
                                 with open(archivos_json[equipo], "w") as file:
                                     json.dump([], file)
-
+                            
                                 # Obtiene el ID de la receta
                                 id_receta = self.obtener_o_crear_receta(valores)
                                 
-                                if id_receta is not None:
-                                    self.guardarEnBaseCiclo({
-                                        "estadoMaquina": estado_actual,
-                                        "cantidadTorres": valores[4],
-                                        "lote": valores[22],
-                                        "fecha_inicio": datetime.now(),
-                                        "peso": valores[5],
-                                        "idEquipo": valores[0],
-                                        "idReceta": id_receta,  # Usamos el ID obtenido
-                                    })
-                                else:
-                                    logger.error(f"No se pudo obtener/crear la receta para {equipo}")
+                                #if id_receta is not None:
+                                #    self.guardarEnBaseCiclo({
+                                #        "estadoMaquina": estado_actual,
+                                #        "cantidadTorres": valores[4],
+                                #        "lote": valores[22],
+                                #        "fecha_inicio": datetime.now(),
+                                #        "peso": valores[5],
+                                #        "idEquipo": valores[0],
+                                #        "idReceta": id_receta,  # Usamos el ID obtenido
+                                #    })
+                                #else:
+                                #    logger.error(f"No se pudo obtener/crear la receta para {equipo}")
 
                             if "COCINA" in equipo:
                                 ciclo_activo = None
@@ -264,7 +269,7 @@ class ObtenerNodosOpc:
                                     "niv_agua": valores[11],
                                     "receta": valores[2],
                                     "receta_paso_actual": valores[12],
-                                    "tiempoTranscurrido": self.calcular_tiempo_transcurrido(ciclo_activo.fecha_inicio) if ciclo_activo else "00:00",
+                                    "tiempoTranscurrido": self.calcular_tiempo_transcurrido_json(historial_actual) if historial_actual else "00:00:00",
                                     "ultimo_ciclo": self.obtener_ultimo_ciclo_finalizado(valores[0]),
                                 }
                                 equipo_detalle = {
@@ -306,7 +311,7 @@ class ObtenerNodosOpc:
                                     "niv_agua": valores[12],
                                     "receta": valores[2],
                                     "receta_paso_actual": valores[6],
-                                    "tiempoTranscurrido": self.calcular_tiempo_transcurrido(ciclo_activo.fecha_inicio) if ciclo_activo else "00:00",
+                                    "tiempoTranscurrido": self.calcular_tiempo_transcurrido_json(historial_actual) if historial_actual else "00:00:00",
                                     "ultimo_ciclo": self.obtener_ultimo_ciclo_finalizado(valores[0]),
                                 }
                                 equipo_detalle = {
@@ -343,7 +348,10 @@ class ObtenerNodosOpc:
         return resultado
 
     def obtener_ultimo_ciclo_finalizado(self, id_equipo):
+        """Obtiene el último ciclo finalizado para un equipo,
+        con un fallback para cuando la base de datos está vacía"""
         try:
+            # Intentar obtener de la base de datos
             ultimo_ciclo = (
                 self.session.query(Ciclo)
                 .filter(
@@ -355,8 +363,8 @@ class ObtenerNodosOpc:
                 .first()
             )
             return ultimo_ciclo.id if ultimo_ciclo else None
-        except Exception as e:
-            logger.error(f"Error al obtener último ciclo finalizado para equipo {id_equipo}: {e}")
+        except Exception:
+            # Si no funciona la BD, retornar None
             return None
 
     def guardarEnBaseCiclo(self, datos):
@@ -508,15 +516,47 @@ class ObtenerNodosOpc:
             return None
 
     def obtener_id_ciclo_existente(self, lote, idEquipo):
+        """
+        Genera un ID único para el ciclo basado en el lote y equipo,
+        sin necesidad de consultar la base de datos.
+        """
         try:
-            ciclo = self.session.query(Ciclo).filter_by(lote=lote, idEquipo=idEquipo).order_by(Ciclo.id.desc()).first()
-            if ciclo:
-                return ciclo.id
-            else:
-                return None
+            # Primero intentamos buscar en la base de datos por compatibilidad
+            try:
+                ciclo = (self.session.query(Ciclo)
+                        .filter_by(lote=lote, idEquipo=idEquipo, fecha_fin=None)
+                        .order_by(Ciclo.id.desc())
+                        .first())
+                
+                if ciclo:
+                    return ciclo.id
+            except Exception:
+                # Si hay error en la BD, continuamos con el método alternativo
+                pass
+            
+            # Método alternativo: generar un ID único basado en lote y equipo
+            # Esto permite mantener consistencia entre ejecuciones
+            import hashlib
+            
+            # Combinamos lote y equipo para crear un identificador único
+            unique_key = f"{lote}-{idEquipo}"
+            
+            # Generamos un hash para tener un valor numérico consistente
+            hash_object = hashlib.md5(unique_key.encode())
+            hash_hex = hash_object.hexdigest()
+            
+            # Convertimos los primeros 8 caracteres del hash a un entero
+            # Esto nos da un ID entre 0 y 4,294,967,295
+            ciclo_id = int(hash_hex[:8], 16) 
+            
+            logger.info(f"Generado ID virtual {ciclo_id} para equipo {idEquipo}, lote {lote}")
+            return ciclo_id
+                
         except Exception as e:
-            logger.error(f"Error al buscar ciclo existente: {e}")
-            return None
+            logger.error(f"Error generando ID para ciclo: {e}")
+            # Fallback: generar un ID aleatorio entre 1 y 1,000,000
+            import random
+            return random.randint(1, 1000000)
 
     async def actualizarRecetas(self):
         lista_recetas = {}

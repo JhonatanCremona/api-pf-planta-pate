@@ -52,6 +52,22 @@ ruta_sql_sensores = os.path.join(ruta_principal, 'query', 'insert_sensores.sql')
 ruta_sql_recetas = os.path.join(ruta_principal, 'query', 'insert_recetas.sql')
 ruta_sql_equipos = os.path.join(ruta_principal, 'query', 'insert_equipos.sql')
 ruta_sql_alarmas = os.path.join(ruta_principal, 'query', 'insert_alarmas.sql')
+ruta_sql_ciclos = os.path.join(ruta_principal, 'query', 'ciclos_insert.sql')
+ruta_sql_sensora1 = os.path.join(ruta_principal, 'query', 'sensor_nivel_agua_part1_insert.sql')
+ruta_sql_sensora2 = os.path.join(ruta_principal, 'query', 'sensor_nivel_agua_part2_insert.sql')
+ruta_sql_sensora3 = os.path.join(ruta_principal, 'query', 'sensor_nivel_agua_part3_insert.sql')
+ruta_sql_sensora4 = os.path.join(ruta_principal, 'query', 'sensor_nivel_agua_part4_insert.sql')
+ruta_sql_sensora5 = os.path.join(ruta_principal, 'query', 'sensor_nivel_agua_part5_insert.sql')
+ruta_sql_sensorp1 = os.path.join(ruta_principal, 'query', 'sensor_temperatura_agua_part1_insert.sql')
+ruta_sql_sensorp2 = os.path.join(ruta_principal, 'query', 'sensor_temperatura_agua_part2_insert.sql')
+ruta_sql_sensorp3 = os.path.join(ruta_principal, 'query', 'sensor_temperatura_agua_part3_insert.sql')
+ruta_sql_sensorp4 = os.path.join(ruta_principal, 'query', 'sensor_temperatura_agua_part4_insert.sql')
+ruta_sql_sensorp5 = os.path.join(ruta_principal, 'query', 'sensor_temperatura_agua_part5_insert.sql')
+ruta_sql_sensorn1 = os.path.join(ruta_principal, 'query', 'sensor_temperatura_producto_part1_insert.sql')
+ruta_sql_sensorn2 = os.path.join(ruta_principal, 'query', 'sensor_temperatura_producto_part2_insert.sql')
+ruta_sql_sensorn3 = os.path.join(ruta_principal, 'query', 'sensor_temperatura_producto_part3_insert.sql')
+ruta_sql_sensorn4 = os.path.join(ruta_principal, 'query', 'sensor_temperatura_producto_part4_insert.sql')
+ruta_sql_sensorn5 = os.path.join(ruta_principal, 'query', 'sensor_temperatura_producto_part5_insert.sql')
 
 def cargar_archivo_sql(file_path: str):
     try:
@@ -107,6 +123,57 @@ async def lifespan(app: FastAPI):
         if session.query(Alarma).count() == 0:
             logger.info(f"Cargar datos SQL ALARMAS:")
             cargar_archivo_sql(ruta_sql_alarmas)
+        if session.query(Ciclo).count() == 0:
+            logger.info(f"Cargar datos SQL CICLOS:")
+            cargar_archivo_sql(ruta_sql_ciclos)
+
+        if session.query(SensoresAA).count() == 0:
+            logger.info(f"Cargar datos SQL SENSOR TEMPERATURA AGUA 1:")
+            cargar_archivo_sql(ruta_sql_sensora1)
+        if session.query(SensoresAA).count() == 0:
+            logger.info(f"Cargar datos SQL SENSOR TEMPERATURA AGUA 2:")
+            cargar_archivo_sql(ruta_sql_sensora2)
+        if session.query(SensoresAA).count() == 0:
+            logger.info(f"Cargar datos SQL SENSOR TEMPERATURA AGUA 3:")
+            cargar_archivo_sql(ruta_sql_sensora3)
+        if session.query(SensoresAA).count() == 0:
+            logger.info(f"Cargar datos SQL SENSOR TEMPERATURA AGUA 4:")
+            cargar_archivo_sql(ruta_sql_sensora4)
+        if session.query(SensoresAA).count() == 0:
+            logger.info(f"Cargar datos SQL SENSOR TEMPERATURA AGUA 5:")
+            cargar_archivo_sql(ruta_sql_sensora5)
+
+        if session.query(SensoresAA).count() == 0:
+            logger.info(f"Cargar datos SQL SENSOR TEMPERATURA PRODUCTO 1:")
+            cargar_archivo_sql(ruta_sql_sensorp1)
+        if session.query(SensoresAA).count() == 0:
+            logger.info(f"Cargar datos SQL SENSOR TEMPERATURA PRODUCTO 2:")
+            cargar_archivo_sql(ruta_sql_sensorp2)
+        if session.query(SensoresAA).count() == 0:
+            logger.info(f"Cargar datos SQL SENSOR TEMPERATURA PRODUCTO 3:")
+            cargar_archivo_sql(ruta_sql_sensorp3)
+        if session.query(SensoresAA).count() == 0:
+            logger.info(f"Cargar datos SQL SENSOR TEMPERATURA PRODUCTO 4:")
+            cargar_archivo_sql(ruta_sql_sensorp4)
+        if session.query(SensoresAA).count() == 0:
+            logger.info(f"Cargar datos SQL SENSOR TEMPERATURA PRODUCTO 5:")
+            cargar_archivo_sql(ruta_sql_sensorp5)
+
+        if session.query(SensoresAA).count() == 0:
+            logger.info(f"Cargar datos SQL SENSOR NIVEL AGUA 1:")
+            cargar_archivo_sql(ruta_sql_sensorn1)
+        if session.query(SensoresAA).count() == 0:
+            logger.info(f"Cargar datos SQL SENSOR NIVEL AGUA 2:")
+            cargar_archivo_sql(ruta_sql_sensorn2)
+        if session.query(SensoresAA).count() == 0:
+            logger.info(f"Cargar datos SQL SENSOR NIVEL AGUA 3:")
+            cargar_archivo_sql(ruta_sql_sensorn3)
+        if session.query(SensoresAA).count() == 0:
+            logger.info(f"Cargar datos SQL SENSOR NIVEL AGUA 4:")
+            cargar_archivo_sql(ruta_sql_sensorn4)
+        if session.query(SensoresAA).count() == 0:
+            logger.info(f"Cargar datos SQL SENSOR NIVEL AGUA 5:")
+            cargar_archivo_sql(ruta_sql_sensorn5)
         yield
     finally:
         opc_client.disconnect()

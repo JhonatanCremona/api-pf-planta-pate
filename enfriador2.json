@@ -1,82 +1,22 @@
 [
   {
     "id_historial": 1,
-    "tiempo": "2025-04-23 13:34:06",
-    "temp_agua": 7.87,
+    "tiempo": "2025-04-23 19:05:40",
+    "temp_agua": 13.73,
     "temp_ingreso": 2,
-    "temp_prod": 41.18,
+    "temp_prod": 50.99,
     "estado": "PRE OPERATIVO",
-    "niv_agua": 1636.62,
-    "idCiclo": 1991
+    "niv_agua": 1583.22,
+    "idCiclo": 99355732
   },
   {
     "id_historial": 2,
-    "tiempo": "2025-04-23 13:34:18",
-    "temp_agua": 2,
+    "tiempo": "2025-04-23 19:05:51",
+    "temp_agua": 5.67,
     "temp_ingreso": 2,
-    "temp_prod": 30.24,
+    "temp_prod": 38.07,
     "estado": "PRE OPERATIVO",
-    "niv_agua": 1620.13,
-    "idCiclo": 1991
-  },
-  {
-    "id_historial": 3,
-    "tiempo": "2025-04-23 13:34:31",
-    "temp_agua": 2,
-    "temp_ingreso": 2,
-    "temp_prod": 22.09,
-    "estado": "PRE OPERATIVO",
-    "niv_agua": 1590.19,
-    "idCiclo": 1991
-  },
-  {
-    "id_historial": 4,
-    "tiempo": "2025-04-23 13:34:44",
-    "temp_agua": 2,
-    "temp_ingreso": 2,
-    "temp_prod": 16.57,
-    "estado": "PRE OPERATIVO",
-    "niv_agua": 1602.6,
-    "idCiclo": 1991
-  },
-  {
-    "id_historial": 5,
-    "tiempo": "2025-04-23 13:34:57",
-    "temp_agua": 2,
-    "temp_ingreso": 2,
-    "temp_prod": 12.83,
-    "estado": "PRE OPERATIVO",
-    "niv_agua": 1637.53,
-    "idCiclo": 1991
-  },
-  {
-    "id_historial": 6,
-    "tiempo": "2025-04-23 13:35:09",
-    "temp_agua": 2,
-    "temp_ingreso": 2,
-    "temp_prod": 10.47,
-    "estado": "PRE OPERATIVO",
-    "niv_agua": 1630.89,
-    "idCiclo": 1991
-  },
-  {
-    "id_historial": 7,
-    "tiempo": "2025-04-23 13:35:22",
-    "temp_agua": 2,
-    "temp_ingreso": 2,
-    "temp_prod": 8.7,
-    "estado": "PRE OPERATIVO",
-    "niv_agua": 1584.34,
-    "idCiclo": 1991
-  },
-  {
-    "id_historial": 8,
-    "tiempo": "2025-04-23 13:35:35",
-    "temp_agua": 2,
-    "temp_ingreso": 2,
-    "temp_prod": 7.58,
-    "estado": "PRE OPERATIVO",
-    "niv_agua": 1576.74,
-    "idCiclo": 1991
+    "niv_agua": 1561.39,
+    "idCiclo": 99355732
   }
 ]
