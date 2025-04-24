@@ -87,7 +87,7 @@ class ObtenerNodosOpc:
         if hasattr(self, 'session'):
             self.session.close()
 
-    def datosGenerales(self):
+    async def datosGenerales(self):
         resultado = {
             "datos-cocinas": [],
             "datos-enfriadores": [],
@@ -128,8 +128,9 @@ class ObtenerNodosOpc:
                 datos_json[equipo] = []
 
         try:
-            root_node = self.conexion_servidor.get_root_node().get_child(["0:Objects"]).get_child(["2:ServerInterfaces"])
+            root_nodes = await self.conexion_servidor.get_objects_nodos()
 
+            root_node = root_nodes.get_child(["0:Objects"]).get_child(["2:ServerInterfaces"])
             interfaces = {
                 "2:Server interface_1": [
                     "2:COCINA-1-L1", "2:COCINA-2-L1", "2:COCINA-3-L1",
@@ -344,6 +345,7 @@ class ObtenerNodosOpc:
 
         except Exception as e:
             logger.error(f"Error al buscar nodos: {e}")
+            await self.conexion_servidor.handle_reconnect()
 
         return resultado
 

@@ -1,0 +1,80 @@
+networks:
+  bridge_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.25.0.0/16
+
+services:
+  db:
+    image: mysql:8.0.32
+    container_name: mysql_container
+    restart: always
+    environment:
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD}
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      bridge_network:
+        ipv4_address: 172.25.0.6
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      retries: 5
+      start_period: 30s
+
+  fastapi_app_pf:
+    build: .
+    container_name: fastapi_container_pf
+    restart: always
+    depends_on:
+      - db
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: mysql+pymysql://${MYSQL_USER}:${MYSQL_PASSWORD}@db:3306/${MYSQL_DATABASE}
+    ports:
+      - "8001:8001"
+    volumes:
+      - .:/app
+    command: >
+      uvicorn main:app --host 0.0.0.0 --port 8001 --reload
+    networks:
+      bridge_network:
+        ipv4_address: 172.25.0.7
+
+  nextjs-app_pf:
+    build:
+      context: ../proyecto-pf
+      dockerfile: web.Dockerfile
+    ports:
+      - "3001:3001"
+    volumes:
+      - ../proyecto-pf:/app 
+    restart: always
+    depends_on:
+      - fastapi_app_pf
+    networks:
+      bridge_network:
+        ipv4_address: 172.25.0.8
+
+  opc_server_pf:
+    build:
+      context: ../opc_ua_server
+      dockerfile: server-ua.Dockerfile
+    ports:
+      - "4841:4841"
+    volumes:
+      - ../opc_ua_server:/app 
+    restart: always
+    depends_on:
+      - fastapi_app_pf
+    networks:
+      bridge_network:
+        ipv4_address: 172.25.0.9
+
+volumes:
+  mysql_data:

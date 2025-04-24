@@ -17,7 +17,7 @@ from models.sensores import Sensores
 from models.equipo import Equipo
 from models.receta import Receta
 from models.estadoCiclo import EstadoCiclo
-from models.alarmas import Alarma
+from models.alarmas import Alarmas
 
 from routers import equiposDatos, historicoGraficos, historicoProductividad
 
@@ -91,15 +91,15 @@ async def central_opc_render():
                 #"cocinas": dGeneral.buscarCocinas(),
                 #"enfriadores": dGeneral.buscarEnfriadores(),
                 #"datos": dGeneral.respuestaDatos(),
-                "datosGenerales": dGeneral.datosGenerales(),
-                "actualizarRecetas": await  dGeneral.actualizarRecetas(),
+                "datosGenerales": await dGeneral.datosGenerales(),
+                #"actualizarRecetas": await  dGeneral.actualizarRecetas(),
             }
 
             #await ws_manager.send_message("datos-cocinas", data["cocinas"])
             #await ws_manager.send_message("datos-enfriadores", data["enfriadores"])
             #await ws_manager.send_message("datos", data["datos"])
             await ws_manager.send_message("datos-generales", data["datosGenerales"])
-            await ws_manager.send_message("datos-recetas", data["actualizarRecetas"])
+            #await ws_manager.send_message("datos-recetas", data["actualizarRecetas"])
 
             await asyncio.sleep(10.0)
         except Exception as e:
@@ -212,7 +212,7 @@ def listar_alarmas_bdd():
     session = db.SessionLocal()
     lista_respuesta = []
     lista_alarmas = (
-        session.query(Alarma).all()
+        session.query(Alarmas).all()
     )
 
     for elem in lista_alarmas:

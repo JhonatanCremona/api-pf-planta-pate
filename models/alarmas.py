@@ -3,8 +3,8 @@ from sqlalchemy.orm import relationship
 from config.db import Base
 from datetime import datetime
 
-class Alarma(Base):
-    __tablename__ = "alarma"
+class Alarmas(Base):
+    __tablename__ = "alarmas"
 
     id = Column(Integer, primary_key=True, index=True, autoincrement= False)
     tipoAlarma = Column(String(20), index=True)
