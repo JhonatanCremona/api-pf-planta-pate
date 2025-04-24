@@ -1,62 +1,302 @@
 [
   {
     "id_historial": 1,
-    "tiempo": "2025-04-23 19:04:58",
-    "temp_agua": 62.63,
+    "tiempo": "2025-04-24 03:32:26",
+    "temp_agua": 54.5,
     "temp_ingreso": 2,
-    "temp_prod": 0,
+    "temp_prod": 5.31,
     "estado": "PRE OPERATIVO",
-    "niv_agua": 1571.43,
-    "idCiclo": 1878140244
+    "niv_agua": 1621.3,
+    "idCiclo": 2031668283
   },
   {
     "id_historial": 2,
-    "tiempo": "2025-04-23 19:05:09",
-    "temp_agua": 80.49,
+    "tiempo": "2025-04-24 03:32:37",
+    "temp_agua": 76.87,
+    "temp_ingreso": 2,
+    "temp_prod": 5.84,
+    "estado": "PRE OPERATIVO",
+    "niv_agua": 1625.24,
+    "idCiclo": 2031668283
+  },
+  {
+    "id_historial": 3,
+    "tiempo": "2025-04-24 03:32:48",
+    "temp_agua": 81.0,
+    "temp_ingreso": 2,
+    "temp_prod": 7.22,
+    "estado": "OPERATIVO",
+    "niv_agua": 1895.0,
+    "idCiclo": 2031668283
+  },
+  {
+    "id_historial": 4,
+    "tiempo": "2025-04-24 03:32:59",
+    "temp_agua": 80.59,
+    "temp_ingreso": 2,
+    "temp_prod": 10.66,
+    "estado": "OPERATIVO",
+    "niv_agua": 1925.15,
+    "idCiclo": 2031668283
+  },
+  {
+    "id_historial": 5,
+    "tiempo": "2025-04-24 03:33:09",
+    "temp_agua": 81.32,
+    "temp_ingreso": 2,
+    "temp_prod": 17.46,
+    "estado": "OPERATIVO",
+    "niv_agua": 1967.12,
+    "idCiclo": 2031668283
+  },
+  {
+    "id_historial": 6,
+    "tiempo": "2025-04-24 03:33:20",
+    "temp_agua": 83.02,
+    "temp_ingreso": 2,
+    "temp_prod": 30.77,
+    "estado": "OPERATIVO",
+    "niv_agua": 1916.18,
+    "idCiclo": 2031668283
+  },
+  {
+    "id_historial": 7,
+    "tiempo": "2025-04-24 03:33:31",
+    "temp_agua": 82.96,
+    "temp_ingreso": 2,
+    "temp_prod": 46.23,
+    "estado": "OPERATIVO",
+    "niv_agua": 1929.31,
+    "idCiclo": 2031668283
+  },
+  {
+    "id_historial": 8,
+    "tiempo": "2025-04-24 03:33:41",
+    "temp_agua": 83.63,
+    "temp_ingreso": 2,
+    "temp_prod": 60.59,
+    "estado": "OPERATIVO",
+    "niv_agua": 1992.71,
+    "idCiclo": 2031668283
+  },
+  {
+    "id_historial": 9,
+    "tiempo": "2025-04-24 03:33:52",
+    "temp_agua": 85.48,
+    "temp_ingreso": 2,
+    "temp_prod": 68.85,
+    "estado": "OPERATIVO",
+    "niv_agua": 1973.71,
+    "idCiclo": 2031668283
+  },
+  {
+    "id_historial": 10,
+    "tiempo": "2025-04-24 03:34:03",
+    "temp_agua": 86.4,
+    "temp_ingreso": 2,
+    "temp_prod": 72.36,
+    "estado": "OPERATIVO",
+    "niv_agua": 1901.24,
+    "idCiclo": 2031668283
+  },
+  {
+    "id_historial": 11,
+    "tiempo": "2025-04-24 03:34:14",
+    "temp_agua": 87.54,
+    "temp_ingreso": 2,
+    "temp_prod": 74.0,
+    "estado": "OPERATIVO",
+    "niv_agua": 1955.86,
+    "idCiclo": 2031668283
+  },
+  {
+    "id_historial": 12,
+    "tiempo": "2025-04-24 03:34:25",
+    "temp_agua": 86.56,
+    "temp_ingreso": 2,
+    "temp_prod": 74.62,
+    "estado": "OPERATIVO",
+    "niv_agua": 1927.77,
+    "idCiclo": 2031668283
+  },
+  {
+    "id_historial": 13,
+    "tiempo": "2025-04-24 03:34:36",
+    "temp_agua": 88.27,
+    "temp_ingreso": 2,
+    "temp_prod": 74.86,
+    "estado": "OPERATIVO",
+    "niv_agua": 1980.71,
+    "idCiclo": 2031668283
+  },
+  {
+    "id_historial": 14,
+    "tiempo": "2025-04-24 03:34:47",
+    "temp_agua": 88.06,
+    "temp_ingreso": 2,
+    "temp_prod": 74.95,
+    "estado": "OPERATIVO",
+    "niv_agua": 1939.67,
+    "idCiclo": 2031668283
+  },
+  {
+    "id_historial": 15,
+    "tiempo": "2025-04-24 03:34:57",
+    "temp_agua": 90.49,
+    "temp_ingreso": 2,
+    "temp_prod": 74.98,
+    "estado": "OPERATIVO",
+    "niv_agua": 1948.92,
+    "idCiclo": 2031668283
+  },
+  {
+    "id_historial": 16,
+    "tiempo": "2025-04-24 03:35:46",
+    "temp_agua": 46.37,
+    "temp_ingreso": 2,
+    "temp_prod": 5.22,
+    "estado": "PRE OPERATIVO",
+    "niv_agua": 1610.39,
+    "idCiclo": 2031668283
+  },
+  {
+    "id_historial": 17,
+    "tiempo": "2025-04-24 03:35:49",
+    "temp_agua": 54.5,
+    "temp_ingreso": 2,
+    "temp_prod": 5.31,
+    "estado": "PRE OPERATIVO",
+    "niv_agua": 1626.98,
+    "idCiclo": 2031668283
+  },
+  {
+    "id_historial": 18,
+    "tiempo": "2025-04-24 03:35:53",
+    "temp_agua": 60.6,
+    "temp_ingreso": 2,
+    "temp_prod": 5.41,
+    "estado": "PRE OPERATIVO",
+    "niv_agua": 1645.94,
+    "idCiclo": 2031668283
+  },
+  {
+    "id_historial": 19,
+    "tiempo": "2025-04-24 03:35:56",
+    "temp_agua": 66.7,
+    "temp_ingreso": 2,
+    "temp_prod": 5.54,
+    "estado": "PRE OPERATIVO",
+    "niv_agua": 1565.54,
+    "idCiclo": 2031668283
+  },
+  {
+    "id_historial": 20,
+    "tiempo": "2025-04-24 03:35:59",
+    "temp_agua": 72.8,
+    "temp_ingreso": 2,
+    "temp_prod": 5.7,
+    "estado": "PRE OPERATIVO",
+    "niv_agua": 1618.32,
+    "idCiclo": 2031668283
+  },
+  {
+    "id_historial": 21,
+    "tiempo": "2025-04-24 03:36:02",
+    "temp_agua": 78.9,
+    "temp_ingreso": 2,
+    "temp_prod": 5.92,
+    "estado": "PRE OPERATIVO",
+    "niv_agua": 1628.69,
+    "idCiclo": 2031668283
+  },
+  {
+    "id_historial": 22,
+    "tiempo": "2025-04-24 03:36:04",
+    "temp_agua": 80.69,
     "temp_ingreso": 2,
     "temp_prod": 6.2,
     "estado": "OPERATIVO",
     "niv_agua": 1650.0,
-    "idCiclo": 1878140244
+    "idCiclo": 2031668283
   },
   {
-    "id_historial": 3,
-    "tiempo": "2025-04-23 19:05:19",
-    "temp_agua": 81.47,
+    "id_historial": 23,
+    "tiempo": "2025-04-24 03:36:07",
+    "temp_agua": 79.49,
     "temp_ingreso": 2,
-    "temp_prod": 7.88,
+    "temp_prod": 6.56,
     "estado": "OPERATIVO",
-    "niv_agua": 1935.1,
-    "idCiclo": 1878140244
+    "niv_agua": 1755.0,
+    "idCiclo": 2031668283
   },
   {
-    "id_historial": 4,
-    "tiempo": "2025-04-23 19:05:30",
-    "temp_agua": 81.71,
+    "id_historial": 24,
+    "tiempo": "2025-04-24 03:36:11",
+    "temp_agua": 80.02,
     "temp_ingreso": 2,
-    "temp_prod": 12.24,
+    "temp_prod": 7.03,
     "estado": "OPERATIVO",
-    "niv_agua": 1967.51,
-    "idCiclo": 1878140244
+    "niv_agua": 1860.0,
+    "idCiclo": 2031668283
   },
   {
-    "id_historial": 5,
-    "tiempo": "2025-04-23 19:05:40",
-    "temp_agua": 82.85,
+    "id_historial": 25,
+    "tiempo": "2025-04-24 03:36:14",
+    "temp_agua": 80.75,
     "temp_ingreso": 2,
-    "temp_prod": 20.47,
+    "temp_prod": 7.64,
     "estado": "OPERATIVO",
-    "niv_agua": 1944.11,
-    "idCiclo": 1878140244
+    "niv_agua": 1941.29,
+    "idCiclo": 2031668283
   },
   {
-    "id_historial": 6,
-    "tiempo": "2025-04-23 19:05:51",
-    "temp_agua": 83.21,
+    "id_historial": 26,
+    "tiempo": "2025-04-24 03:36:18",
+    "temp_agua": 80.01,
     "temp_ingreso": 2,
-    "temp_prod": 35.3,
+    "temp_prod": 8.72,
     "estado": "OPERATIVO",
-    "niv_agua": 1988.06,
-    "idCiclo": 1878140244
+    "niv_agua": 1973.71,
+    "idCiclo": 2031668283
+  },
+  {
+    "id_historial": 27,
+    "tiempo": "2025-04-24 03:36:21",
+    "temp_agua": 81.53,
+    "temp_ingreso": 2,
+    "temp_prod": 9.79,
+    "estado": "OPERATIVO",
+    "niv_agua": 1904.83,
+    "idCiclo": 2031668283
+  },
+  {
+    "id_historial": 28,
+    "tiempo": "2025-04-24 03:36:24",
+    "temp_agua": 80.6,
+    "temp_ingreso": 2,
+    "temp_prod": 11.67,
+    "estado": "OPERATIVO",
+    "niv_agua": 1973.52,
+    "idCiclo": 2031668283
+  },
+  {
+    "id_historial": 29,
+    "tiempo": "2025-04-24 03:36:27",
+    "temp_agua": 81.72,
+    "temp_ingreso": 2,
+    "temp_prod": 12.84,
+    "estado": "OPERATIVO",
+    "niv_agua": 1941.81,
+    "idCiclo": 2031668283
+  },
+  {
+    "id_historial": 30,
+    "tiempo": "2025-04-24 03:36:30",
+    "temp_agua": 81.95,
+    "temp_ingreso": 2,
+    "temp_prod": 15.72,
+    "estado": "OPERATIVO",
+    "niv_agua": 1936.13,
+    "idCiclo": 2031668283
   }
 ]

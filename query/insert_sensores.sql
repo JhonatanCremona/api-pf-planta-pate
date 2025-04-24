@@ -1,4 +1,4 @@
-INSERT INTO pf.sensores (id, nombre, tipo) VALUES
+INSERT INTO sensores (id, nombre, tipo) VALUES
 (1, 'Temperatura agua', 'GENERAL'),
 (2, 'Temperatura ingreso', 'GENERAL'), 
 (3, 'Temperatura producto', 'GENERAL'), /*HABILITAR OPCIONAL*/

@@ -101,7 +101,7 @@ async def central_opc_render():
             await ws_manager.send_message("datos-generales", data["datosGenerales"])
             #await ws_manager.send_message("datos-recetas", data["actualizarRecetas"])
 
-            await asyncio.sleep(10.0)
+            await asyncio.sleep(2.0)
         except Exception as e:
             logger.error(f"Error en el lector del OPC: {e}")
 
@@ -116,11 +116,15 @@ async def lifespan(app: FastAPI):
         if session.query(Sensores).count() == 0:
             logger.info(f"Cargar registros BDD [Sensores]")
             cargar_archivo_sql(ruta_sql_sensores)
+
+        if session.query(Receta).count() == 0:
+            logger.info(f"Cargar registros BDD [Recetas]")
             cargar_archivo_sql(ruta_sql_recetas)
+
         if session.query(Equipo).count() == 0:
             logger.info(f"Carga registro BDD [Equipos Dicc]")
             cargar_archivo_sql(ruta_sql_equipos)
-        if session.query(Alarma).count() == 0:
+        if session.query(Alarmas).count() == 0:
             logger.info(f"Cargar datos SQL ALARMAS:")
             cargar_archivo_sql(ruta_sql_alarmas)
         if session.query(Ciclo).count() == 0:

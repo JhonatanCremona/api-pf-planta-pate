@@ -1,4 +1,4 @@
-INSERT INTO pf.receta (id, nombre, nroPaso, tipoFin) VALUES
+INSERT INTO receta (id, nombre, nroPaso, tipoFin) VALUES
 (1, 'Jamon tipo 1', 1, 'TEMPERATURA'),
 (2, 'Jamon tipo 2', 2, 'TIEMPO'), 
 (3, 'Jamon tipo 3', 3, 'TEMPERATURA'),
